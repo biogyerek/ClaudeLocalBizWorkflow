@@ -1,0 +1,71 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        {{content.intro}}
+    </div>
+</section>
+
+<!-- Services List -->
+<section class="services-list">
+    <div class="container">
+        <div class="services-grid detailed">
+            {{#each services}}
+            <div class="service-card-large">
+                <div class="service-image">
+                    <img src="/assets/images/services/{{this.slug}}.jpg"
+                         alt="{{this.name}} - {{../business.name}}"
+                         loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h2><a href="/{{this.slug}}/">{{this.name}}</a></h2>
+                    <p>{{this.description}}</p>
+                    <a href="/{{this.slug}}/" class="btn btn-primary">Részletek</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="main-content">
+    <div class="container">
+        {{content.text}}
+    </div>
+</section>
+
+<!-- Service Areas Section -->
+<section class="all-service-areas">
+    <div class="container">
+        <h2>Szolgáltatási területeink</h2>
+        <p>Az alábbi településeken és környékükön vállalunk munkát:</p>
+        <div class="locations-full-list">
+            {{#each locations}}
+            <a href="/{{../seo.primary_keyword_slug}}-{{this.slug}}/">
+                {{../seo.primary_keyword}} {{this.name}}
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Kérjen árajánlatot!</h2>
+        <p>Válasszon szolgáltatásaink közül és kérjen személyre szabott árajánlatot.</p>
+        <div class="cta-buttons">
+            <a href="/ajanlatkeres/" class="btn btn-primary">Árajánlatkérés</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,77 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero location-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        {{content.intro}}
+    </div>
+</section>
+
+<!-- Services in this Location -->
+<section class="location-services">
+    <div class="container">
+        <h2>Szolgáltatásaink {{location.name}} területén</h2>
+        <div class="services-grid">
+            {{#each services}}
+            <div class="service-card">
+                <h3><a href="/{{this.slug}}/">{{this.name}}</a></h3>
+                <p>{{this.short_description}}</p>
+                <a href="/{{this.slug}}/" class="btn btn-link">Részletek →</a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="main-content">
+    <div class="container">
+        {{content.text}}
+    </div>
+</section>
+
+<!-- Why Choose Us in this Location -->
+<section class="why-us-local">
+    <div class="container">
+        <h2>Miért válasszon minket {{location.name}} területén?</h2>
+        <ul class="benefits-list">
+            <li>Gyors kiszállás {{location.name}} és környékére</li>
+            <li>Helyi referenciák és elégedett ügyfelek</li>
+            <li>Ingyenes helyszíni felmérés</li>
+            <li>Garanciális munkavégzés</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>{{seo.primary_keyword}} {{location.name}} - Kérjen árajánlatot!</h2>
+        <p>Vegye fel velünk a kapcsolatot személyre szabott árajánlatért.</p>
+        <div class="cta-buttons">
+            <a href="/ajanlatkeres/" class="btn btn-primary">Árajánlatkérés</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Nearby Locations -->
+<section class="nearby-locations">
+    <div class="container">
+        <h2>Környező települések</h2>
+        <div class="locations-grid">
+            {{#each nearby_locations}}
+            <a href="/{{../seo.primary_keyword_slug}}-{{this.slug}}/" class="location-link">
+                {{this.name}}
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</section>

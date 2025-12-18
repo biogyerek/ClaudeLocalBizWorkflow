@@ -1,0 +1,104 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- Estimate Form -->
+<section class="estimate-section">
+    <div class="container">
+        <div class="estimate-grid">
+            <!-- Benefits -->
+            <div class="estimate-benefits">
+                {{content.text}}
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <span class="icon">✓</span>
+                        <span>Ingyenes árajánlat</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="icon">✓</span>
+                        <span>Gyors válasz 24 órán belül</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="icon">✓</span>
+                        <span>Kötelezettségmentes</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="icon">✓</span>
+                        <span>Személyre szabott megoldások</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="estimate-form-wrapper">
+                <h2>Árajánlatkérés</h2>
+                <form class="estimate-form" action="{{form.webhook_url}}" method="POST">
+                    <div class="form-group">
+                        <label for="name">Név *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Szolgáltatás *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Válasszon...</option>
+                            {{#each services}}
+                            <option value="{{this.name}}">{{this.name}}</option>
+                            {{/each}}
+                            <option value="other">Egyéb</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Helyszín (település)</label>
+                        <input type="text" id="location" name="location" placeholder="pl. Budapest 2. kerület">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Projekt részletei *</label>
+                        <textarea id="details" name="details" rows="5" required
+                            placeholder="Írja le röviden, milyen munkára lenne szüksége..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Tervezett költségkeret</label>
+                        <select id="budget" name="budget">
+                            <option value="">Válasszon...</option>
+                            <option value="0-100000">0 - 100.000 Ft</option>
+                            <option value="100000-300000">100.000 - 300.000 Ft</option>
+                            <option value="300000-500000">300.000 - 500.000 Ft</option>
+                            <option value="500000-1000000">500.000 - 1.000.000 Ft</option>
+                            <option value="1000000+">1.000.000 Ft felett</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            Elolvastam és elfogadom az <a href="/adatvedelmi-nyilatkozat/" target="_blank">adatvédelmi nyilatkozatot</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Árajánlat kérése</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

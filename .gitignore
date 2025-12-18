@@ -1,0 +1,38 @@
+# Environment files (contain API keys)
+.env
+.env.txt
+.env.local
+.env.*.local
+
+# Generated output
+output/
+generated/
+
+# Config file (contains business-specific data)
+config.json
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any scripts use them)
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Reference repos (not part of final product)
+kirby-github-setup/
+asztalosmester/

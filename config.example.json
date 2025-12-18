@@ -1,0 +1,87 @@
+{
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "site": {
+    "url": "https://example.hu",
+    "use_www": false,
+    "trailing_slash": true
+  },
+  "business": {
+    "name": "PadlóMester Budapest",
+    "industry": "padlóburkoló",
+    "industry_slug": "padlobur kolo",
+    "phone": "+36301234567",
+    "phone_display": "+36 30 123 4567",
+    "email": "info@example.hu",
+    "address": {
+      "street": "Váci út 123.",
+      "city": "Budapest",
+      "zip": "1134"
+    },
+    "geo": {
+      "lat": "47.5074",
+      "lng": "19.0454"
+    },
+    "maps_embed": "https://www.google.com/maps/embed?pb=..."
+  },
+  "seo": {
+    "primary_keyword": "vinyl padló lerakás",
+    "primary_keyword_slug": "vinyl-padlo-lerakas"
+  },
+  "services": [
+    {
+      "name": "Vinyl padló lerakás",
+      "slug": "vinyl-padlo-lerakas",
+      "short_description": "Professzionális vinyl padló lerakás gyorsan és precízen."
+    },
+    {
+      "name": "Laminált padló lerakás",
+      "slug": "laminalt-padlo-lerakas",
+      "short_description": "Laminált padlók szakszerű telepítése."
+    },
+    {
+      "name": "SPC padló lerakás",
+      "slug": "spc-padlo-lerakas",
+      "short_description": "Modern SPC padlók lerakása garanciával."
+    },
+    {
+      "name": "Padlócsiszolás",
+      "slug": "padlocsiszolas",
+      "short_description": "Régi fapadlók felújítása csiszolással."
+    }
+  ],
+  "branding": {
+    "colors": {
+      "primary": "#2c3e50",
+      "secondary": "#3498db",
+      "accent": "#e74c3c",
+      "button": "#27ae60",
+      "text": "#333333",
+      "background": "#ffffff"
+    },
+    "tagline": "Minőségi padlóburkolás, elégedett ügyfelek"
+  },
+  "domain_knowledge": "",
+  "locations_csv": "locations.csv",
+  "form": {
+    "webhook_url": "https://hook.eu2.make.com/your-webhook-id"
+  },
+  "analytics": {
+    "google_id": "",
+    "gtm_id": ""
+  },
+  "social": {
+    "facebook": "",
+    "instagram": ""
+  },
+  "team": [
+    {
+      "name": "Kovács János",
+      "slug": "kovacs-janos",
+      "position": "Ügyvezető",
+      "bio": "15 éves tapasztalat a padlóburkolás területén."
+    }
+  ]
+}

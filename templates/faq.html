@@ -1,0 +1,42 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- FAQ Content -->
+<section class="faq-section">
+    <div class="container">
+        {{content.text}}
+
+        <!-- FAQ Accordion -->
+        <div class="faq-list">
+            {{#each faq}}
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <h3>{{this.question}}</h3>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>{{this.answer}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Still Have Questions -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Nem találta meg a választ?</h2>
+        <p>Vegye fel velünk a kapcsolatot és szívesen válaszolunk kérdéseire.</p>
+        <div class="cta-buttons">
+            <a href="/kapcsolat/" class="btn btn-primary">Kapcsolat</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,80 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        {{content.intro}}
+    </div>
+</section>
+
+<!-- Company Story -->
+<section class="company-story">
+    <div class="container">
+        {{content.text}}
+    </div>
+</section>
+
+<!-- Team Section (if available) -->
+{{#if team}}
+<section class="team-section">
+    <div class="container">
+        <h2>Csapatunk</h2>
+        <div class="team-grid">
+            {{#each team}}
+            <div class="team-member">
+                <img src="/assets/images/team/{{this.slug}}.jpg"
+                     alt="{{this.name}} - {{this.position}}"
+                     loading="lazy">
+                <h3>{{this.name}}</h3>
+                <p class="position">{{this.position}}</p>
+                <p>{{this.bio}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+{{/if}}
+
+<!-- Values Section -->
+<section class="values-section">
+    <div class="container">
+        <h2>Értékeink</h2>
+        <div class="values-grid">
+            <div class="value">
+                <h3>Minőség</h3>
+                <p>Csak a legjobb minőségű anyagokat használjuk munkáink során.</p>
+            </div>
+            <div class="value">
+                <h3>Megbízhatóság</h3>
+                <p>Betartjuk a határidőket és álljuk a szavunkat.</p>
+            </div>
+            <div class="value">
+                <h3>Szakértelem</h3>
+                <p>Folyamatosan képezzük magunkat a legújabb technikákból.</p>
+            </div>
+            <div class="value">
+                <h3>Ügyfélközpontúság</h3>
+                <p>Az Ön elégedettsége a legfontosabb számunkra.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Dolgozzunk együtt!</h2>
+        <p>Vegye fel velünk a kapcsolatot és beszéljük meg projektjét.</p>
+        <div class="cta-buttons">
+            <a href="/kapcsolat/" class="btn btn-primary">Kapcsolat</a>
+            <a href="/ajanlatkeres/" class="btn btn-secondary">Árajánlatkérés</a>
+        </div>
+    </div>
+</section>

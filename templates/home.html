@@ -1,0 +1,95 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            {{content.leader}}
+        </div>
+        <div class="hero-cta">
+            <a href="/ajanlatkeres/" class="btn btn-primary">Ingyenes árajánlat</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <h2>Szolgáltatásaink</h2>
+        <div class="services-grid">
+            {{#each services}}
+            <div class="service-card">
+                <img src="/assets/images/services/{{this.slug}}.jpg"
+                     alt="{{this.name}} - {{../business.name}}"
+                     loading="lazy">
+                <h3><a href="/{{this.slug}}/">{{this.name}}</a></h3>
+                <p>{{this.short_description}}</p>
+                <a href="/{{this.slug}}/" class="btn btn-link">Részletek →</a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="home-content">
+    <div class="container">
+        {{content.text}}
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-us">
+    <div class="container">
+        <h2>Miért válasszon minket?</h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <h3>Tapasztalt szakemberek</h3>
+                <p>Több éves tapasztalattal rendelkező csapatunk garantálja a minőségi munkát.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <h3>Garancia</h3>
+                <p>Minden munkánkra garanciát vállalunk.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <h3>Ingyenes felmérés</h3>
+                <p>Helyszíni felmérés és árajánlat díjmentesen.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <h3>Kedvező árak</h3>
+                <p>Versenyképes árak, magas minőség mellett.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Areas -->
+<section class="service-areas-preview">
+    <div class="container">
+        <h2>Szolgáltatási területeink</h2>
+        <p>Szolgáltatásainkat az alábbi településeken és környékükön kínáljuk:</p>
+        <div class="areas-list">
+            {{#each locations_featured}}
+            <a href="/{{../seo.primary_keyword_slug}}-{{this.slug}}/">{{this.name}}</a>
+            {{/each}}
+            <a href="/szolgaltatasaink/" class="more-link">+ További területek</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Kérjen ingyenes árajánlatot!</h2>
+        <p>Vegye fel velünk a kapcsolatot és kérjen személyre szabott árajánlatot.</p>
+        <div class="cta-buttons">
+            <a href="/ajanlatkeres/" class="btn btn-primary">Árajánlatkérés</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+        </div>
+    </div>
+</section>

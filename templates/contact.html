@@ -1,0 +1,101 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- Contact Info + Form -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Elérhetőségeink</h2>
+
+                <div class="contact-item">
+                    <h3>Telefon</h3>
+                    <a href="tel:{{business.phone}}">{{business.phone_display}}</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:{{business.email}}">{{business.email}}</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Cím</h3>
+                    <address>
+                        {{business.address.street}}<br>
+                        {{business.address.city}}, {{business.address.zip}}
+                    </address>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Nyitvatartás</h3>
+                    <p>Hétfő - Péntek: 8:00 - 17:00<br>
+                    Szombat - Vasárnap: Zárva</p>
+                </div>
+
+                {{content.text}}
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2>Írjon nekünk</h2>
+                <form class="contact-form" action="{{form.webhook_url}}" method="POST">
+                    <div class="form-group">
+                        <label for="name">Név *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Üzenet *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            Elolvastam és elfogadom az <a href="/adatvedelmi-nyilatkozat/" target="_blank">adatvédelmi nyilatkozatot</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Üzenet küldése</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section (optional) -->
+{{#if business.maps_embed}}
+<section class="map-section">
+    <div class="container">
+        <h2>Térkép</h2>
+        <div class="map-wrapper">
+            <iframe
+                src="{{business.maps_embed}}"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+{{/if}}

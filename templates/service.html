@@ -1,0 +1,68 @@
+{{!-- extends: base.html --}}
+
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        {{content.leader}}
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        <div class="intro-content">
+            {{content.intro}}
+        </div>
+        <div class="intro-image">
+            <img src="/assets/images/services/{{service.slug}}.jpg"
+                 alt="{{service.name}} - {{business.name}}"
+                 loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="main-content">
+    <div class="container">
+        {{content.text}}
+    </div>
+</section>
+
+<!-- Service Areas for this Service -->
+<section class="service-locations">
+    <div class="container">
+        <h2>{{service.name}} - Elérhető területek</h2>
+        <p>{{service.name}} szolgáltatásunkat az alábbi településeken kínáljuk:</p>
+        <div class="locations-grid">
+            {{#each locations}}
+            <a href="/{{../seo.primary_keyword_slug}}-{{this.slug}}/" class="location-link">
+                {{../seo.primary_keyword}} {{this.name}}
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Érdekli a {{service.name}}?</h2>
+        <p>Kérjen ingyenes árajánlatot még ma!</p>
+        <div class="cta-buttons">
+            <a href="/ajanlatkeres/" class="btn btn-primary">Árajánlatkérés</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Other Services -->
+<section class="other-services">
+    <div class="container">
+        <h2>További szolgáltatásaink</h2>
+        <div class="services-grid">
+            {{#each other_services}}
+            <a href="/{{this.slug}}/" class="service-link">{{this.name}}</a>
+            {{/each}}
+        </div>
+    </div>
+</section>

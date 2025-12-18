@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{page.canonical_url}}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="{{og.type}}">
+    <meta property="og:title" content="{{meta.title}}">
+    <meta property="og:description" content="{{meta.description}}">
+    <meta property="og:url" content="{{page.canonical_url}}">
+    <meta property="og:image" content="{{site.url}}/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="{{business.name}}">
+    <meta property="og:locale" content="hu_HU">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{meta.title}}">
+    <meta name="twitter:description" content="{{meta.description}}">
+    <meta name="twitter:image" content="{{site.url}}/assets/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {{schema.json}}
+    </script>
+
+    <!-- Google Analytics (optional) -->
+    {{#if analytics.google_id}}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{analytics.google_id}}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{analytics.google_id}}');
+    </script>
+    {{/if}}
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="/assets/images/logo.png" alt="{{business.name}} logo">
+            </a>
+
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="/">Főoldal</a></li>
+                    <li><a href="/szolgaltatasaink/">Szolgáltatások</a></li>
+                    <li><a href="/rolunk/">Rólunk</a></li>
+                    <li><a href="/kapcsolat/">Kapcsolat</a></li>
+                    <li><a href="/ajanlatkeres/" class="btn-cta">Árajánlat</a></li>
+                </ul>
+            </nav>
+
+            <a href="tel:{{business.phone}}" class="header-phone">
+                {{business.phone_display}}
+            </a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    {{#if breadcrumb}}
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                {{#each breadcrumb}}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{this.url}}">
+                        <span itemprop="name">{{this.name}}</span>
+                    </a>
+                    <meta itemprop="position" content="{{this.position}}">
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+    </nav>
+    {{/if}}
+
+    <!-- Main Content -->
+    <main>
+        {{content}}
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h4>{{business.name}}</h4>
+                    <p>{{business.address.street}}<br>
+                    {{business.address.city}}, {{business.address.zip}}</p>
+                    <p>
+                        <a href="tel:{{business.phone}}">{{business.phone_display}}</a><br>
+                        <a href="mailto:{{business.email}}">{{business.email}}</a>
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Szolgáltatásaink</h4>
+                    <ul>
+                        {{#each services}}
+                        <li><a href="/{{this.slug}}/">{{this.name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Gyors linkek</h4>
+                    <ul>
+                        <li><a href="/rolunk/">Rólunk</a></li>
+                        <li><a href="/gyik/">GYIK</a></li>
+                        <li><a href="/kapcsolat/">Kapcsolat</a></li>
+                        <li><a href="/ajanlatkeres/">Árajánlatkérés</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-section">
+                    <h4>Jogi információk</h4>
+                    <ul>
+                        <li><a href="/aszf/">ÁSZF</a></li>
+                        <li><a href="/adatvedelmi-nyilatkozat/">Adatvédelmi nyilatkozat</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; {{current_year}} {{business.name}}. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
