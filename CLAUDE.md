@@ -61,32 +61,86 @@ Kérdezd meg a usertől az alábbiakat ebben a sorrendben:
    ```
    Minden szolgáltatáshoz generálj slug-ot.
 
-6. **Phone**
+6. **Service Images** (képek a szolgáltatásokhoz)
+
+   A szolgáltatások megadása után AZONNAL mutasd meg a pontos mappastruktúrát:
+   ```
+   === Szolgáltatás képek ===
+
+   Kérlek helyezd el a szolgáltatás képeket az alábbi mappába:
+
+   📁 assets/images/originals/services/
+
+   A fájlneveknek PONTOSAN meg kell egyezniük a slug-okkal:
+
+   {{#each services}}
+   └── {{this.slug}}.jpg
+   {{/each}}
+
+   Például a te szolgáltatásaidhoz:
+   └── konyhabutor-keszites.jpg
+   └── beepitett-szekreny.jpg
+   └── gardrob.jpg
+   └── furodoszoba-butor.jpg
+
+   ⚠️  FONTOS: Ha csak ENTER-t nyomsz, PLACEHOLDER képek lesznek használva!
+       Ez azt jelenti, hogy a végleges oldalon üres/minta képek jelennek meg,
+       amiket később manuálisan kell majd cserélni.
+
+   Készen állsz? (ENTER = placeholder képek / "ok" = képek hozzáadva)
+   ```
+
+   Várd meg a user válaszát. Ha ENTER-t nyom, jelezd:
+   ```
+   ℹ️  Placeholder képek lesznek használva. A végleges képeket később
+      az assets/images/originals/services/ mappába kell helyezni,
+      majd újra kell futtatni a build folyamatot.
+   ```
+
+7. **Logo és Hero kép**
+   ```
+   === Logó és Hero háttérkép ===
+
+   Kérlek helyezd el az alábbi képeket:
+
+   📁 assets/images/originals/
+   └── logo.png         ← Céges logó (PNG, átlátszó háttérrel ajánlott)
+   └── hero-bg.jpg      ← Főoldal háttérkép (széles, fekvő formátum)
+   └── og-image.jpg     ← Social media megosztás kép (1200x630px)
+
+   🎨 A logóból automatikusan generálódnak a favicon-ok!
+
+   ⚠️  FONTOS: Ha csak ENTER-t nyomsz, PLACEHOLDER képek lesznek használva!
+
+   Készen állsz? (ENTER = placeholder / "ok" = képek hozzáadva)
+   ```
+
+8. **Phone**
    ```
    Mi a telefonszám? (pl. +36301234567)
    ```
 
-7. **Email**
+9. **Email**
    ```
    Mi az email cím?
    ```
 
-8. **Address**
-   ```
-   Mi a cím? (utca, város, irányítószám)
-   ```
+10. **Address**
+    ```
+    Mi a cím? (utca, város, irányítószám)
+    ```
 
-9. **Brand color**
-   ```
-   Mi a fő márka szín? (hex kód, pl. #8B4513)
-   ```
+11. **Brand color**
+    ```
+    Mi a fő márka szín? (hex kód, pl. #8B4513)
+    ```
 
-10. **Tagline**
+12. **Tagline**
     ```
     Mi a szlogen/tagline?
     ```
 
-11. **Domain knowledge** (opcionális)
+13. **Domain knowledge** (opcionális)
     ```
     Van-e speciális szakterületi tudás, amit szeretnél megadni? (opcionális)
     Pl. anyagok, technikák, márkák, szabványok.
@@ -102,14 +156,40 @@ Mentsd a válaszokat `config.json`-ba a dokumentált struktúra szerint.
 Mutasd meg az összefoglalót és kérj megerősítést:
 ```
 === Konfiguráció összefoglaló ===
+
+📋 ÜZLETI ADATOK:
 Cégnév: ...
 Iparág: ...
 Fő kulcsszó: ...
 Szolgáltatások: ...
-...
+Telefon: ...
+Email: ...
+Cím: ...
+Márka szín: ...
+Szlogen: ...
+
+🖼️  KÉPEK ÁLLAPOTA:
+Szolgáltatás képek: ✓ Hozzáadva / ⚠️ PLACEHOLDER
+Logo: ✓ Hozzáadva / ⚠️ PLACEHOLDER
+Hero háttérkép: ✓ Hozzáadva / ⚠️ PLACEHOLDER
+OG image: ✓ Hozzáadva / ⚠️ PLACEHOLDER
+
+{{#if has_placeholders}}
+⚠️  FIGYELEM: Placeholder képek lesznek használva!
+    A végleges képeket később az assets/images/originals/ mappába
+    kell helyezni, majd újra kell futtatni a build folyamatot.
+{{/if}}
 
 Folytatjuk a tartalomgenerálással? (igen/nem)
 ```
+
+### 1.5 Phase 1 vége
+
+**A Phase 1 akkor fejeződik be, amikor a user megerősíti az összefoglalót ("igen").**
+
+Ezután azonnal indul a **Phase 2: Content Generation**, ahol az LLM generálja a weboldal tartalmát.
+
+A képek optimalizálása NEM a Phase 1-ben történik! A képek feldolgozása automatikusan a **Phase 3: Build** elején fut le.
 
 ---
 
