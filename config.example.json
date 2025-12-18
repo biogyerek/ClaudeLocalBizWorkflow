@@ -61,7 +61,8 @@
       "text": "#333333",
       "background": "#ffffff"
     },
-    "tagline": "Minőségi padlóburkolás, elégedett ügyfelek"
+    "tagline": "Minőségi padlóburkolás, elégedett ügyfelek",
+    "hero_image": "/assets/images/hero-bg.jpg"
   },
   "domain_knowledge": "",
   "locations_csv": "locations.csv",

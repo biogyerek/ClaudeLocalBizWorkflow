@@ -58,6 +58,12 @@
                 <img src="/assets/images/logo.png" alt="{{business.name}} logo">
             </a>
 
+            <button class="menu-toggle" aria-label="Menü megnyitása" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
             <nav class="main-menu">
                 <ul>
                     <li><a href="/">Főoldal</a></li>
@@ -148,6 +154,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="cookie-consent" role="dialog" aria-labelledby="cookie-title" aria-modal="true">
+        <div class="cookie-content">
+            <h3 id="cookie-title">Cookie beállítások</h3>
+            <p>Weboldalunk cookie-kat használ a felhasználói élmény javítása és a weboldal működése érdekében. Az "Elfogadom" gombra kattintva hozzájárul a cookie-k használatához.</p>
+            <div class="cookie-buttons">
+                <button id="cookie-accept" class="btn btn-primary">Elfogadom</button>
+                <button id="cookie-settings" class="btn btn-secondary">Beállítások</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Button (shown after consent) -->
+    <button id="cookie-settings-btn" class="cookie-settings-btn" aria-label="Cookie beállítások" style="display: none;">
+        🍪
+    </button>
 
     <!-- Scripts -->
     <script src="/assets/js/main.js"></script>

@@ -150,4 +150,79 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // ========================================
+    // Cookie Consent
+    // ========================================
+    const cookieConsent = document.getElementById('cookie-consent');
+    const cookieAccept = document.getElementById('cookie-accept');
+    const cookieSettings = document.getElementById('cookie-settings');
+    const cookieSettingsBtn = document.getElementById('cookie-settings-btn');
+
+    // Check if consent was already given
+    const hasConsent = localStorage.getItem('cookieConsent');
+
+    if (cookieConsent) {
+        if (!hasConsent) {
+            // Show cookie consent banner after a short delay
+            setTimeout(() => {
+                cookieConsent.classList.add('show');
+            }, 1000);
+        } else {
+            // Show settings button if consent was given
+            if (cookieSettingsBtn) {
+                cookieSettingsBtn.style.display = 'block';
+            }
+        }
+
+        // Accept cookies
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                localStorage.setItem('cookieConsentDate', new Date().toISOString());
+                cookieConsent.classList.remove('show');
+                if (cookieSettingsBtn) {
+                    cookieSettingsBtn.style.display = 'block';
+                }
+
+                // Track consent in analytics if available
+                if (typeof gtag === 'function') {
+                    gtag('consent', 'update', {
+                        'analytics_storage': 'granted'
+                    });
+                }
+            });
+        }
+
+        // Settings button (for now just shows the banner again)
+        if (cookieSettings) {
+            cookieSettings.addEventListener('click', () => {
+                // For a simple implementation, redirect to privacy policy
+                window.location.href = '/adatvedelmi-nyilatkozat/';
+            });
+        }
+
+        // Cookie settings button (bottom left)
+        if (cookieSettingsBtn) {
+            cookieSettingsBtn.addEventListener('click', () => {
+                cookieConsent.classList.add('show');
+                cookieSettingsBtn.style.display = 'none';
+            });
+        }
+    }
+
+    // ========================================
+    // Close Mobile Menu on Link Click
+    // ========================================
+    const menuLinks = document.querySelectorAll('.main-menu a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (mainMenu && mainMenu.classList.contains('active')) {
+                mainMenu.classList.remove('active');
+                if (menuToggle) {
+                    menuToggle.classList.remove('active');
+                }
+            }
+        });
+    });
+
 });

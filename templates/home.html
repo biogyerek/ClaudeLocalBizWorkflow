@@ -1,14 +1,14 @@
 {{!-- extends: base.html --}}
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero{{#if branding.hero_image}} hero-image{{/if}}"{{#if branding.hero_image}} style="background-image: url('{{branding.hero_image}}')"{{/if}}>
     <div class="container">
         <div class="hero-content">
             {{content.leader}}
         </div>
         <div class="hero-cta">
-            <a href="/ajanlatkeres/" class="btn btn-primary">Ingyenes árajánlat</a>
-            <a href="tel:{{business.phone}}" class="btn btn-secondary">{{business.phone_display}}</a>
+            <a href="/ajanlatkeres/" class="btn btn-primary btn-large">Ingyenes árajánlat</a>
+            <a href="tel:{{business.phone}}" class="btn btn-secondary btn-large">{{business.phone_display}}</a>
         </div>
     </div>
 </section>
