@@ -212,6 +212,47 @@ generated/
 
 ## Phase 3: Build Static Site
 
+### 3.0 Képek optimalizálása (AUTOMATIKUS)
+
+**FONTOS:** A build folyamat első lépéseként MINDIG futtasd a képoptimalizálást!
+
+```bash
+# Pillow telepítése (ha még nincs)
+pip install Pillow
+
+# Képek optimalizálása
+python scripts/optimize-images.py
+```
+
+**Bemeneti képek helye:** `assets/images/originals/`
+
+```
+assets/images/originals/
+├── logo.png              → Logó (ebből favicon is generálódik!)
+├── hero-bg.jpg           → Hero háttérkép
+├── og-image.jpg          → Social media megosztás kép
+├── services/
+│   ├── [szolg-slug].jpg  → Szolgáltatás képek
+│   └── ...
+└── team/
+    ├── [nev-slug].jpg    → Csapat fotók
+    └── ...
+```
+
+**Generált kimenetek:**
+- WebP + JPG minden méretben (srcset támogatás)
+- Favicon-ok (16x16, 32x32, 180x180, 192x192, 512x512)
+- Automatikus aspect ratio vágás
+- ~95% méretcsökkenés
+
+**Szolgáltatás képek elnevezése:**
+A szolgáltatás slug-jának megfelelően kell elnevezni a képeket!
+```
+Szolgáltatás: "Konyhabútor készítés"
+Slug: "konyhabutor-keszites"
+Kép: originals/services/konyhabutor-keszites.jpg
+```
+
 ### 3.1 Mappa struktúra létrehozása
 
 ```
