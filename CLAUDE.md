@@ -187,7 +187,27 @@ Folytatjuk a tartalomgenerálással? (igen/nem)
 
 **A Phase 1 akkor fejeződik be, amikor a user megerősíti az összefoglalót ("igen").**
 
-Ezután azonnal indul a **Phase 2: Content Generation**, ahol az LLM generálja a weboldal tartalmát.
+A config.json mentése után MINDIG mutasd ezt az üzenetet:
+
+```
+✅ Phase 1 KÉSZ! A konfiguráció elmentve: config.json
+
+═══════════════════════════════════════════════════════════════
+🔄 ÚJ KONTEXTUS SZÜKSÉGES A FOLYTATÁSHOZ!
+═══════════════════════════════════════════════════════════════
+
+A tartalomgenerálás sok kontextust igényel, ezért kérlek:
+
+1. Nyiss egy ÚJ terminált / ÚJ Claude Code session-t
+2. Navigálj ugyanebbe a mappába
+3. Írd be: "phase 2" vagy "generálás"
+
+Ez biztosítja, hogy elegendő kontextus álljon rendelkezésre
+a teljes tartalomgeneráláshoz.
+═══════════════════════════════════════════════════════════════
+```
+
+**FONTOS:** Ne folytasd automatikusan a Phase 2-vel ugyanabban a kontextusban!
 
 A képek optimalizálása NEM a Phase 1-ben történik! A képek feldolgozása automatikusan a **Phase 3: Build** elején fut le.
 
