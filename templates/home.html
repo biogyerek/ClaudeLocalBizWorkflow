@@ -1,7 +1,7 @@
 {{!-- extends: base.html --}}
 
 <!-- Hero Section -->
-<section class="hero{{#if branding.hero_image}} hero-image{{/if}}"{{#if branding.hero_image}} style="background-image: url('{{branding.hero_image}}')"{{/if}}>
+<section class="hero{{#if branding.hero_image}} hero-image{{/if}}"{{#if branding.hero_image}} style="background-image: image-set(url('{{branding.hero_image_webp}}') type('image/webp'), url('{{branding.hero_image}}') type('image/jpeg'))"{{/if}}>
     <div class="container">
         <div class="hero-content">
             {{content.leader}}
@@ -20,9 +20,23 @@
         <div class="services-grid">
             {{#each services}}
             <div class="service-card">
-                <img src="/assets/images/services/{{this.slug}}.jpg"
-                     alt="{{this.name}} - {{../business.name}}"
-                     loading="lazy">
+                <picture>
+                    <source type="image/webp"
+                            srcset="/assets/images/services/{{this.slug}}-300w.webp 300w,
+                                    /assets/images/services/{{this.slug}}-400w.webp 400w,
+                                    /assets/images/services/{{this.slug}}-600w.webp 600w"
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px">
+                    <source type="image/jpeg"
+                            srcset="/assets/images/services/{{this.slug}}-300w.jpg 300w,
+                                    /assets/images/services/{{this.slug}}-400w.jpg 400w,
+                                    /assets/images/services/{{this.slug}}-600w.jpg 600w"
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px">
+                    <img src="/assets/images/services/{{this.slug}}.jpg"
+                         alt="{{this.name}} - {{../business.name}}"
+                         width="600" height="400"
+                         loading="lazy"
+                         decoding="async">
+                </picture>
                 <h3><a href="/{{this.slug}}/">{{this.name}}</a></h3>
                 <p>{{this.short_description}}</p>
                 <a href="/{{this.slug}}/" class="btn btn-link">Részletek →</a>

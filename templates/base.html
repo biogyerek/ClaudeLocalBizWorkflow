@@ -55,7 +55,18 @@
     <header class="site-header">
         <div class="container">
             <a href="/" class="logo">
-                <img src="/assets/images/logo.png" alt="{{business.name}} logo">
+                <picture>
+                    <source type="image/webp"
+                            srcset="/assets/images/logo-100w.webp 100w,
+                                    /assets/images/logo-150w.webp 150w,
+                                    /assets/images/logo-200w.webp 200w"
+                            sizes="(max-width: 768px) 80px, 150px">
+                    <img src="/assets/images/logo.png"
+                         alt="{{business.name}} logo"
+                         width="150" height="50"
+                         loading="eager"
+                         decoding="async">
+                </picture>
             </a>
 
             <button class="menu-toggle" aria-label="Menü megnyitása" aria-expanded="false">

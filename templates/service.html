@@ -14,9 +14,23 @@
             {{content.intro}}
         </div>
         <div class="intro-image">
-            <img src="/assets/images/services/{{service.slug}}.jpg"
-                 alt="{{service.name}} - {{business.name}}"
-                 loading="lazy">
+            <picture>
+                <source type="image/webp"
+                        srcset="/assets/images/services/{{service.slug}}-400w.webp 400w,
+                                /assets/images/services/{{service.slug}}-600w.webp 600w,
+                                /assets/images/services/{{service.slug}}-800w.webp 800w"
+                        sizes="(max-width: 768px) 100vw, 50vw">
+                <source type="image/jpeg"
+                        srcset="/assets/images/services/{{service.slug}}-400w.jpg 400w,
+                                /assets/images/services/{{service.slug}}-600w.jpg 600w,
+                                /assets/images/services/{{service.slug}}-800w.jpg 800w"
+                        sizes="(max-width: 768px) 100vw, 50vw">
+                <img src="/assets/images/services/{{service.slug}}.jpg"
+                     alt="{{service.name}} - {{business.name}}"
+                     width="600" height="400"
+                     loading="lazy"
+                     decoding="async">
+            </picture>
         </div>
     </div>
 </section>

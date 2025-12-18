@@ -21,9 +21,23 @@
             {{#each services}}
             <div class="service-card-large">
                 <div class="service-image">
-                    <img src="/assets/images/services/{{this.slug}}.jpg"
-                         alt="{{this.name}} - {{../business.name}}"
-                         loading="lazy">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="/assets/images/services/{{this.slug}}-400w.webp 400w,
+                                        /assets/images/services/{{this.slug}}-600w.webp 600w,
+                                        /assets/images/services/{{this.slug}}-800w.webp 800w"
+                                sizes="(max-width: 768px) 100vw, 400px">
+                        <source type="image/jpeg"
+                                srcset="/assets/images/services/{{this.slug}}-400w.jpg 400w,
+                                        /assets/images/services/{{this.slug}}-600w.jpg 600w,
+                                        /assets/images/services/{{this.slug}}-800w.jpg 800w"
+                                sizes="(max-width: 768px) 100vw, 400px">
+                        <img src="/assets/images/services/{{this.slug}}.jpg"
+                             alt="{{this.name}} - {{../business.name}}"
+                             width="600" height="400"
+                             loading="lazy"
+                             decoding="async">
+                    </picture>
                 </div>
                 <div class="service-content">
                     <h2><a href="/{{this.slug}}/">{{this.name}}</a></h2>

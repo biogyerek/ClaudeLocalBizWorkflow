@@ -29,9 +29,23 @@
         <div class="team-grid">
             {{#each team}}
             <div class="team-member">
-                <img src="/assets/images/team/{{this.slug}}.jpg"
-                     alt="{{this.name}} - {{this.position}}"
-                     loading="lazy">
+                <picture>
+                    <source type="image/webp"
+                            srcset="/assets/images/team/{{this.slug}}-150w.webp 150w,
+                                    /assets/images/team/{{this.slug}}-200w.webp 200w,
+                                    /assets/images/team/{{this.slug}}-300w.webp 300w"
+                            sizes="150px">
+                    <source type="image/jpeg"
+                            srcset="/assets/images/team/{{this.slug}}-150w.jpg 150w,
+                                    /assets/images/team/{{this.slug}}-200w.jpg 200w,
+                                    /assets/images/team/{{this.slug}}-300w.jpg 300w"
+                            sizes="150px">
+                    <img src="/assets/images/team/{{this.slug}}.jpg"
+                         alt="{{this.name}} - {{this.position}}"
+                         width="150" height="150"
+                         loading="lazy"
+                         decoding="async">
+                </picture>
                 <h3>{{this.name}}</h3>
                 <p class="position">{{this.position}}</p>
                 <p>{{this.bio}}</p>

@@ -61,6 +61,20 @@ img {
     display: block;
 }
 
+/* Prevent layout shift with aspect-ratio */
+img[width][height] {
+    aspect-ratio: attr(width) / attr(height);
+}
+
+picture {
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -331,13 +345,72 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
+.service-card picture,
 .service-card img {
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-sm);
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.service-card picture img {
+    margin-bottom: 0;
 }
 
 .service-card h3 a {
     color: var(--color-text);
+}
+
+/* Service card large (services list page) */
+.service-card-large {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-lg);
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-card-large .service-image {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.service-card-large .service-image picture,
+.service-card-large .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card-large .service-content {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Intro section with image */
+.intro-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.intro-image {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+}
+
+.intro-image picture,
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ========================================
@@ -870,6 +943,24 @@ section {
         width: 100%;
         height: 200px;
         object-fit: cover;
+    }
+
+    /* Service card large - stack on mobile */
+    .service-card-large {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-large .service-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Intro section - stack on mobile */
+    .intro-section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image {
+        order: -1;
     }
 
     /* Benefits Grid - 2 columns on mobile */
