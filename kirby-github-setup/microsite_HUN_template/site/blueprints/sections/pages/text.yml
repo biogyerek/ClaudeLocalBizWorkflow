@@ -1,0 +1,16 @@
+type: fields
+fields:
+
+  textTitle:
+    label: Page text
+    type: headline
+  leader:
+    label: Leader text
+    type: textarea
+    when:
+      showLeader: true
+  intro:
+    type: textarea
+  text:
+    type: textarea
+    size: huge

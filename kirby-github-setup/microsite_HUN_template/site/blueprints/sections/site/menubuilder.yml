@@ -1,0 +1,30 @@
+type: fields
+
+fields:
+
+  menuBuilder:
+    label: Menu Builder
+    type: headline
+  menu:
+    type: structure
+    translate: false
+    help: Leave empty to auto-generate menu
+    fields:
+      mainMenu:
+        type: pages
+        label: Mainmenu item
+        max: 1
+      hasSubmenu:
+        type: toggle
+        text: Include a submenu?
+      isButton:
+        type: toggle
+        text: Is this a button?
+      isCall:
+        type: toggle
+        text: Is this a phone number?
+      subMenu:
+        type: pages
+        label: Submenu items
+        when:
+          hasSubmenu: true

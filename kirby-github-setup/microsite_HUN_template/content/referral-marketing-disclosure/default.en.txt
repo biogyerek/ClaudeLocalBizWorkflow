@@ -1,0 +1,107 @@
+Title: Referral Marketing Disclosure
+
+----
+
+Showleader: false
+
+----
+
+Coverimage: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text:
+
+**Welcome to {{ companyName }}!** Our platform links homeowners and businesses with qualified {{ companyIndustry }} professionals. Whether for home projects or specialized work, we make it easier to find trusted experts.  
+
+## Our Role
+We act as a connector, not a direct provider. Our network of {{ companyIndustry }} contractors helps streamline the process so you can quickly find the right fit for your needs.  
+
+## Referral Fees
+{{ companyName }} and its affiliates may earn referral income when connecting clients to contractors. These payments come from contractors and do not affect the price you pay.  
+
+## Standards & Vetting
+Contractors in our network go through a careful screening process for professionalism, dependability, and service quality. Their performance is reviewed regularly to maintain standards.  
+
+## Client Focus
+Your satisfaction comes first. If you have questions or need assistance, we’re here to help ensure your {{ companyService }} project succeeds.
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: pUTtGEZWrAgnK0yr

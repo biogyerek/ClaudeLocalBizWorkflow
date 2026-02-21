@@ -1,0 +1,105 @@
+Title: Disclaimer
+
+----
+
+Showleader: false
+
+----
+
+Coverimage: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text:
+
+## Legal Notice & Limitations
+
+The information shared on the {{ companyName }} website is intended for general reference only. While we take care to keep content accurate, {{ companyName }} makes no guarantees about completeness, reliability, or suitability. Using this information is at your own discretion.  
+
+We are not responsible for any damages — direct, indirect, incidental, or otherwise — that may arise from use of this site.  
+
+Our website may link to external pages we do not control. {{ companyName }} is not accountable for the content or views expressed on those sites.  
+
+We work to keep the site available and functional, but {{ companyName }} will not be held responsible for downtime caused by circumstances beyond our control.  
+
+We reserve the right to modify or update website content at any time without prior notice.
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: q6bhB8AFLJwokdMj

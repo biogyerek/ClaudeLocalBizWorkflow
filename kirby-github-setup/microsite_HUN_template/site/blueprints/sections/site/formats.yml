@@ -1,0 +1,7 @@
+type: fields
+fields:
+  formatHeadline:
+    label: Formázási szabályok
+    type: headline
+  formatLeader:
+    extends: fields/prompt

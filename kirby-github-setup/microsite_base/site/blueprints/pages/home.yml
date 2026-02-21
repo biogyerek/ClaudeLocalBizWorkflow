@@ -1,0 +1,32 @@
+title: Home
+
+options:
+    
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/home/auto-leader
+          auto-text:
+            extends: prompts/home/auto-text
+
+      main:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+  knowledge: tabs/knowledge
+  elements: tabs/elements-home
+  files: tabs/files
+  seo: seo/page

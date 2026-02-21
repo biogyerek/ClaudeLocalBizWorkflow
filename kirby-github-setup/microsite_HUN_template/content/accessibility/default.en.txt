@@ -1,0 +1,116 @@
+Title: Accessibility
+
+----
+
+Showleader: false
+
+----
+
+Coverimage: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text:
+
+## Accessibility & Inclusive Use
+
+{{ companyName }} aims to provide a website that everyone can use comfortably, regardless of ability or limitation. Our focus is on offering an online space that is clear, practical, and usable for the widest audience possible.  
+
+## Our Approach
+At {{ companyName }}, we work toward accessibility by:  
+- Designing our site to function with assistive technologies.  
+- Adding descriptive alternatives for images and media.  
+- Using straightforward layouts and language for clarity.  
+- Providing captions or transcripts for audio and video content.  
+- Carrying out regular checks to improve usability.  
+
+## Key Features
+We’ve built in tools to improve access, such as:  
+- **Adjustable text sizes** so visitors can read comfortably.  
+- **Keyboard-only navigation** for those who don’t use a mouse.  
+- **High-contrast visuals** to assist with low vision.  
+- **Screen reader support** for users with vision impairments.  
+
+## Contact
+If you encounter any difficulty or have suggestions, contact us at {{ email }}.  
+Your feedback helps us keep {{ companyName }} accessible to all.
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: gA8TG7eAAtCcsXWI

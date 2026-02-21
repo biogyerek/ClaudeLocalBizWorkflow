@@ -1,0 +1,35 @@
+{
+  "name": "johannschopplich/kirby-tools-licensing",
+  "description": "Shared tooling for Kirby Tools licensing in Kirby",
+  "type": "library",
+  "version": "0.5.2",
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/kirby-tools/licensing-backend#readme",
+  "authors": [
+    {
+      "name": "Johann Schopplich",
+      "email": "hello@johannschopplich.com",
+      "homepage": "https://johannschopplich.com"
+    }
+  ],
+  "require-dev": {
+    "getkirby/cms": "^4"
+  },
+  "scripts": {
+    "csfix": "@php tools/phpcs/vendor/bin/php-cs-fixer fix"
+  },
+  "autoload": {
+    "psr-4": {
+      "JohannSchopplich\\Licensing\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

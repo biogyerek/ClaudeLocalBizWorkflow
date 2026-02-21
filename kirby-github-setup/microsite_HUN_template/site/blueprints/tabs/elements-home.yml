@@ -1,0 +1,95 @@
+icon: grid-bottom
+sections:
+
+  layout:
+
+    type: fields
+    fields:
+
+      headlineServices:
+        type: headline
+        label: Services section
+      showServices:
+        label: Show Services
+        type: toggle
+        translate: false
+        default: true
+        width: 1/6
+        text:
+            - Don't show
+            - Show
+      titleServices:
+        label: Services Headline
+        help: H2-title Services section
+        type: text
+        width: 1/6
+      services:
+        label: Services
+        type: structure
+        width: 4/6
+        fields:
+          service:
+            type: pages
+            max: 1
+            layout: cards
+            size: tiny
+
+
+      headlineUSPs:
+        type: headline
+        label: USP section
+      showUSPs:
+        label: Show USP Section
+        type: toggle
+        translate: false
+        default: true
+        width: 1/6
+        text:
+            - Don't show
+            - Show
+      titleUSPs:
+        label: USPs Headline
+        help: H2-title USPs section
+        type: text
+        width: 1/6
+      usps:
+        label: USPs
+        type: structure
+        width: 4/6
+        fields:
+          title:
+            type: text
+          text:
+            type: text
+          icon:
+            type: files
+            max: 1
+            layout: cards
+            size: tiny
+
+      headlineFAQ:
+        type: headline
+        label: FAQ section
+      showFAQ:
+        label: Show FAQ Section
+        type: toggle
+        translate: false
+        default: true
+        width: 1/6
+        text:
+            - Don't show
+            - Show
+      titleFAQ:
+        label: FAQ Headline
+        help: H2-title FAQ section
+        type: text
+        width: 1/6
+      faq:
+        label: FAQs
+        type: structure
+        width: 4/6
+        fields:
+          question:
+            type: text
+          answer:
+            type: textarea

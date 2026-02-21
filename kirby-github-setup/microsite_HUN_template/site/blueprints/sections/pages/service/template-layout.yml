@@ -1,0 +1,46 @@
+type: fields
+fields:
+
+  headlineLayout:
+    type: headline
+    label: Template Layout
+
+  showTemplateLeader:
+    label: Show Leader
+    type: toggle
+    translate: false
+    default: true
+    text:
+        - Don't show
+        - Show
+
+  toc:
+    label: Table of Contents
+    type: toggle
+    width: 2/4
+    default: Show
+    width: 1/2
+    default: true
+    translate: false
+    text:
+      - Don't show
+      - Show
+  showSummary:
+    label: Summary
+    type: toggle
+    width: 2/4
+    default: Show
+    width: 1/2
+    translate: false
+    text:
+      - Don't show
+      - Show
+
+  coverimage: 
+    extends: fields/coverimage
+    when:
+      showTemplateLeader: true
+
+  cta:
+    type: link              
+    translate: false

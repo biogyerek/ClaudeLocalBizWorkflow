@@ -1,0 +1,4 @@
+extends: fields/auto-content
+label: Küldetés
+field: mission
+userPrompt: "Ön egy helyi vállalkozó, aki a saját weboldalára ír. A cége neve {{ site.companyName }}, és a {{ site.companyIndustry }} iparágban tevékenykedik, a következő szolgáltatásokat nyújtja: {{ site.companyServices }} a következő területen: {{ site.companyArea }}. Írja meg a küldetésnyilatkozat szövegét. {{ site.promptMission }} {{ site.promptMaster }} Használja az alábbi példa tartalmat és formázást referenciaként. ---PÉLDA TARTALOM KEZDETE--- {{ site.exampleMission }}."

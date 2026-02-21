@@ -1,0 +1,122 @@
+
+section.content {
+  background: var(--color-gray-100);
+  padding: var(--spacing-6) 0;
+}
+
+/* SERVICE */
+.services-container {
+	background: var(--color-blue-200);
+	padding: var(--spacing-20) 0;
+	margin-top: var(--spacing-0);
+/*	text-align: center;*/
+}
+.service {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: var(--spacing-5);
+	align-items: center;
+	margin: var(--spacing-20) 0;
+	padding-bottom: var(--spacing-20);
+	border-bottom: 1px solid var(--color-blue-300);
+}
+.service:first-of-type {
+	margin-top: 0;
+}
+.service:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.service h2.service-heading {
+	margin-top: 0;
+}
+.service p.service-description {
+	align-self: center;
+	font-size: var(--text-lg);
+}
+.service a.btn {
+	align-self: end;
+	margin-top: var(--spacing-12);
+}
+
+@media screen and (min-width: 72rem) {
+	.service {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: var(--spacing-12);
+	}
+}
+
+/* CONTACT SECTION */
+section.contact {
+  background: var(--color-yellow-200);
+  padding: var(--spacing-20) 0;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--spacing-10);
+}
+.contact h2 {
+  margin-top: 0;
+}
+.contact p {
+  margin-bottom: var(--spacing-6);
+}
+.contact-map {
+  margin-top: var(--spacing-6);
+}
+.contact-form {
+}
+
+@media screen and (min-width: 40rem) {
+
+}
+
+@media screen and (min-width: 72rem) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-20);
+  }
+}
+
+
+.prose p {
+  max-width: 100%;
+}
+.service-locations-list {
+}
+.service-locations {
+  margin: var(--spacing-12) auto;
+}
+.service-location:before {
+  content: "📍";
+}
+.service-location h3 {
+  display: inline-block;
+  padding-left: var(--spacing-4);
+}
+.service-location h3 a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-link);
+  text-decoration-thickness: 2px;
+}
+.service-location:after {
+  content: "→";
+  color: var(--color-gray);
+  font-weight: var(--font-line);
+}
+.service-location h3 a:hover {
+  margin-right: 2px;
+  transition: 0.05s;
+  text-decoration-color: var(--color-link-hover);
+}
+
+@media all and (max-width: 48em) {
+
+  .service-locations-list {
+/*    display: block;
+    max-width: 100%;*/
+  }
+}

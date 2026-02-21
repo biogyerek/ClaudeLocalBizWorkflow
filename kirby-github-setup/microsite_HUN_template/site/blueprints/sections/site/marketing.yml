@@ -1,0 +1,15 @@
+type: fields
+
+fields:
+  
+  marketing:
+    label: Marketing
+    type: headline
+  mission:
+    type: text
+    width: 1/2
+  tagline:
+    type: text
+    width: 1/2
+  backstory:
+    type: textarea

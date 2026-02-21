@@ -1,0 +1,2 @@
+extends: fields/auto-text
+userPrompt: "Ön egy helyi vállalkozó, aki a saját weboldalára ír. A cége neve {{ site.companyName }}, és a {{ site.companyIndustry }} iparágban tevékenykedik, a következő szolgáltatásokat nyújtja: {{ site.companyServices }}. Írja meg a fő szöveget ehhez a blogbejegyzéshez, amelynek címe {{ page.title }}. Tartsa be a következő cégadatokat: {{ site.backstory }} {{ site.promptText }} {{ site.promptMaster }} {{ site.promptKnowledge }}."

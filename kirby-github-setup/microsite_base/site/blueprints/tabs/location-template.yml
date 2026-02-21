@@ -1,0 +1,20 @@
+icon: template
+
+columns:
+
+  sidebar:
+    width: 1/4
+    sections:
+
+      template-leader:
+        extends: sections/pages/service/template-layout
+      translation:
+        extends: sections/pages/service/translation
+
+
+  main:
+    width: 3/4
+    sections:
+
+      template-text:
+        extends: sections/pages/service/template-text

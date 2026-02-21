@@ -1,0 +1,7 @@
+type: pages
+headline: Locations
+template: location
+layout: cards
+image: page.images.findBy("name", "cover")
+  cover: true
+  ratio: 3/2

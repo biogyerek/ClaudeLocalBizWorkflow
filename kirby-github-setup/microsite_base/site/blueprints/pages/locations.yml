@@ -1,0 +1,74 @@
+Title: Service Areas
+
+icon: map
+options:
+  changeTemplate:
+    - default
+    - blog
+    - article
+    - hub
+    - persons
+    - directory
+
+tabs:
+
+  page:
+    icon: page
+
+    columns:
+
+      left:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/locations/leader
+          auto-locationsleader:
+            extends: prompts/locations/auto-locationsleader
+          auto-locationsintro:
+            extends: prompts/locations/auto-locationsintro
+          auto-locationstext:
+            extends: prompts/locations/auto-locationstext
+
+      right:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/locations/text
+
+  location template:
+    icon: template
+
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          template-leader:
+            extends: sections/pages/service/template-layout
+          location-auto-leader:
+            extends: prompts/locations/location-auto-leader
+          # location-auto-summary:
+          #   extends: fields/auto-summary
+          location-auto-intro:
+            extends: prompts/locations/location-auto-intro
+          location-auto-text:
+            extends: prompts/locations/location-auto-text
+
+          # translation:
+          #   extends: sections/pages/service/translation
+
+
+      main:
+        width: 3/4
+        sections:
+
+          template-text:
+            extends: sections/pages/service/template-text
+
+  knowledge: tabs/knowledge
+  locations: tabs/locations
+  files: tabs/files
+  seo: seo/page

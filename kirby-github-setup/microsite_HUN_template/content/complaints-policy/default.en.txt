@@ -1,0 +1,112 @@
+Title: Complaints Policy
+
+----
+
+Showleader: false
+
+----
+
+Coverimage: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text:
+
+## Handling Concerns & Feedback
+
+{{ companyName }} is dedicated to delivering professional {{companyIndustry}} solutions while treating all client concerns seriously. If our service falls short, we are committed to resolving matters fairly and promptly.  
+
+## Submitting a Concern
+We have a process in place to address issues quickly. To file a complaint, please contact us at {{email}}.  
+
+## How We Manage Issues
+Every complaint is handled respectfully and without bias. We will keep you informed as we review and work toward a resolution.  
+
+## Resolution Process
+Our goal is to find outcomes that are reasonable and fair. If an issue cannot be settled fully to your satisfaction, we will explain why and outline possible next steps.  
+
+## Record Keeping
+We document complaints, the actions taken, and their outcomes. These records help us identify patterns and strengthen our services.  
+
+## Ongoing Improvement
+Feedback allows us to adapt and refine our work. Complaints are seen as opportunities to prevent future problems and enhance our services.
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: f560YFT75cPzrqDg

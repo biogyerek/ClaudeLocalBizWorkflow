@@ -1,0 +1,6 @@
+#!/usr/bin/expect -f
+set timeout 30
+spawn ssh -p 65002 -o StrictHostKeyChecking=no u388646151@82.29.186.244 "cd domains/mykirtemplate.top/public_html && pwd && git pull origin main && ls -la"
+expect "password:"
+send "3W1BcKHl#LtW!fCc\r"
+expect eof

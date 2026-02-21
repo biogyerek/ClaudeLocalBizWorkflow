@@ -1,0 +1,4 @@
+type: copilot
+label: My Copilot
+field: output
+userPrompt: Write a mission statement for a local {companyIndustry} company called {companyName} located in {companyArea}. Make sure the response is less than 200 characters. Provide response in plain Markdown formatting.

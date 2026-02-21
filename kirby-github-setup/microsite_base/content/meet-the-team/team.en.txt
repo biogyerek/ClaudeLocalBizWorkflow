@@ -1,0 +1,93 @@
+Title: Meet the team
+
+----
+
+Showleader: true
+
+----
+
+Coverimage: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text: 
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: E1tq4O5TBC6kuLUb

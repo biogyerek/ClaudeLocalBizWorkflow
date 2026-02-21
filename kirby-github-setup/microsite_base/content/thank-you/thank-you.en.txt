@@ -1,0 +1,94 @@
+Title: Thank You
+
+----
+
+Showleader: true
+
+----
+
+Coverimage: 
+
+----
+
+Leader:
+
+# We've Received Your Enquiry
+Thanks you for your interest in {{ companyService }}. You will hear from us within 1 business day, but usually much sooner. For immediate questions please call {{ phone }}.
+
+(call: )
+
+----
+
+Intro: 
+
+----
+
+Text: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: gCH7flCBOCtVhXPX

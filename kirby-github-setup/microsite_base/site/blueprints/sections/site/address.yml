@@ -1,0 +1,29 @@
+type: fields
+
+fields:
+
+  addressDetails:
+    label: Address Details
+    type: headline
+
+  address:
+    type: textarea
+    translate: false
+    width: 1/3
+  map:
+    lable: Google Maps embed
+    type: textarea
+    font: monospace
+    width: 1/3
+    buttons: false
+    translate: false
+  directions:
+    label: Get Directions URL
+    type: link
+    width: 1/3
+    translate: false
+
+  # socials:
+  #   label: Social Links
+  #   type: headline
+

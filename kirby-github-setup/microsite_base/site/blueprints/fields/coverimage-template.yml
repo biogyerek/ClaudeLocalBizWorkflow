@@ -1,0 +1,15 @@
+label: Cover Image
+type: files
+layout: cards
+size: large
+width: 1/4
+max: 1
+translate: false
+when:
+  showTemplateLeader: true
+image:
+  ratio: 3/2
+  cover: true
+query: site.children.images.filterBy('template', 'coverimage')
+uploads:
+  template: coverimage

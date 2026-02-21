@@ -1,0 +1,15 @@
+type: fields
+
+fields:
+
+  headlineMisc:
+    label: Miscellaneous
+    type: headline
+  footerCopyright:
+    label: Copyright Disclaimer
+    type: text
+    width: 1/4
+  ctaCall:
+    label: Sticky Mobile Offer CTA
+    type: text
+    width: 1/4

@@ -1,0 +1,21 @@
+type: fields
+
+fields:
+
+  headlineContact:
+    type: headline
+    label: Contact section
+  titleContact:
+    label: Contact Headline
+    help: H2-title Contact section
+    type: text
+    width: 1/4 
+  contacttext:
+    label: Contact text
+    type: textarea
+    width: 3/4
+ contactPage:
+    label: Contact page
+    type: pages
+    max: 1
+    width: 1/4

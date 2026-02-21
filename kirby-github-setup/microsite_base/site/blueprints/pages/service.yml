@@ -1,0 +1,37 @@
+Title: Service
+icon: store
+
+tabs:
+
+  page:
+    icon: page
+
+    columns:
+
+      left:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/service/auto-leader
+          auto-intro:
+            extends: prompts/service/auto-intro
+          auto-description:
+            extends: prompts/service/auto-description
+          auto-text:
+            extends: prompts/service/auto-text
+
+      right:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/service/text
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  # locations: tabs/locations
+  # location-template: tabs/location-template
+  seo: seo/page

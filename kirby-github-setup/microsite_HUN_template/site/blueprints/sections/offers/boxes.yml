@@ -1,0 +1,98 @@
+type: fields
+fields:
+
+  # headlineLinks:
+  #   label: CTA Links
+  #   type: headline
+  # ctaContact:
+  #   label: Contact page
+  #   type: pages
+  #   max: 1
+  #   width: 1/4
+  #   translate: false
+  # ctaEstimate:
+  #   label: Estimate page
+  #   type: pages
+  #   max: 1
+  #   width: 1/4
+  #   translate: false
+
+  headlineCTABoxes:
+    label: CTA Callouts
+    type: headline
+  ctaBoxesInfo:
+    label: About CTA boxes
+    type: info
+    text: |
+      Here you can create the CTA callouts you'd like to be available in-content site-wide.
+      You can call them in any text field using the tag (cta : tag-name) or (offer : tag-name).
+  ctaBoxes:
+    label: CTA Callouts
+    type: structure
+    fields:
+      tag:
+        type: text
+      isCall:
+        label: Is this a phone number?
+        type: toggle
+        text: Phone number?
+        help: This automatically pulls the site phone number
+      link:
+        type: pages
+        max: 1
+        when:
+          isCall: false
+      text:
+        type: text
+      cta:
+        type: text
+
+
+
+  # ctaText:
+  #   label: Headline CTA
+  #   type: text
+  #   width: 1/3
+  #   before:
+  # ctaTextEstimate:
+  #   label: Headline Estimate CTA
+  #   type: text
+  #   width: 1/3
+  # ctaTextCall:
+  #   label: Headline Call CTA
+  #   type: text
+  #   width: 1/3
+
+
+
+  # headlineOfferBoxes:
+  #   label: Offer Boxes
+  #   type: headline
+  # offerBoxesInfo:
+  #   label: About offer boxes
+  #   type: info
+  #   text: |
+  #     Here you can create the Offer callouts you'd like to be available in-content site-wide.
+  #     You can call them in any text field using the tag (offer : tag-name).
+  offerBoxes:
+    label: Offer Boxes
+    type: structure
+    fields:
+      tag:
+        type: text
+      isCall:
+        label: Is this a phone number?
+        type: toggle
+        text: Phone number?
+        help: This automatically pulls the site phone number
+      link:
+        type: pages
+        max: 1
+        when:
+          isCall: false
+      headline:
+        type: text
+      text:
+        type: text
+      cta:
+        type: text

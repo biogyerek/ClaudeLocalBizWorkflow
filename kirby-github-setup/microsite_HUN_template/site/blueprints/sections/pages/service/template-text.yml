@@ -1,0 +1,28 @@
+type: fields
+fields:
+
+  textTitle:
+    label: Page text
+    type: headline
+  headline:
+    type: text
+    help: Title tag
+  leader:
+    label: Leader text
+    type: textarea
+    when:
+      showTemplateLeader: true
+  intro:
+    type: textarea
+  leader:
+    type: textarea
+  ## Consolidate this field into intro field.
+  # answer:
+  #   type: textarea
+  summary:
+    type: textarea
+    when:
+      showSummary: true
+  text:
+    type: textarea
+    size: large

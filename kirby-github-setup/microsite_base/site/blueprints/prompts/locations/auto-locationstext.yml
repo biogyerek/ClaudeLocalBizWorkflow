@@ -1,0 +1,4 @@
+extends: fields/auto-content
+label: Locations Text
+field: locationstext
+userPrompt: "Egy helyi vállalkozó vagy, aki a saját weboldalára ír tartalmat. A céged neve {{ site.companyName }}, amely a {{ site.companyIndustry }} iparágban tevékenykedik, és a következő szolgáltatásokat nyújtja: {{ site.companyServices }}. Írd meg a szolgáltatási területeket bemutató oldal fő szövegét, amelynek címe: {{ page.title }}. Írj informatív bekezdést arról, hogy mely területeken működik a céged és miért fontos a helyi közösségek kiszolgálása. {{ site.promptText }} {{ site.promptMaster }} A választ magyar nyelven add meg."

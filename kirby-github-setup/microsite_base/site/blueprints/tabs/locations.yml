@@ -1,0 +1,5 @@
+icon: pin
+sections:
+
+  listed:
+    extends: sections/locations

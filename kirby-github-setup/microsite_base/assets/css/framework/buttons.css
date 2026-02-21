@@ -1,0 +1,198 @@
+:root {
+	--btn-bg: var(--color-black);
+	--btn-color: var(--color-black);
+	--btn-filled-bg: var(--color-black);
+	--btn-filled-color: var(--color-white);
+}
+
+button {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.btn {
+	display: inline-flex;
+	padding: 0.5rem 1.5rem;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--text-lg);
+	color: var(--btn-color);
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: var(--rounded);
+	font-family: var(--font-mono);
+	white-space: nowrap;
+	background: none;
+}
+.btn svg {
+	margin-right: 0.75rem;
+	min-width: 1rem;
+}
+.btn--outlined {
+	border-color: var(--color-gray-400);
+}
+.btn--outlined.btn--white {
+	border-color: var(--color-white);
+	color: var(--color-white);
+}
+.btn--filled {
+	border-color: var(--btn-filled-bg);
+	background: var(--btn-filled-bg);
+	color: var(--btn-filled-color) !important;
+}
+.btn--filled svg {
+	color: var(--color-yellow-600);
+}
+
+
+.btn--cta {
+	text-decoration: none;
+	font-size: var(--text-2xl);
+	font-weight: var(--font-semibold);
+	border-color: var(--btn-cta-bg);
+	background: var(--btn-cta-bg);
+	color: var(--btn-cta-color) !important;
+}
+.btn--cta:hover {
+	background: var(--btn-cta-bg-hover);
+}
+.btn--cta:after {
+	content: "→";
+	margin-left: var(--spacing-4);
+}
+.btn--cta svg {
+	color: var(--color-green-600);
+}
+
+
+
+.btn--offer {
+	text-decoration: none;
+	font-size: var(--text-xl);
+	font-weight: var(--font-bold);
+	text-transform: ;
+	font-family: var(--font-sans);
+	border-color: var(--btn-offer-bg);
+	background: var(--btn-offer-bg);
+	color: var(--btn-offer-color) !important;
+}
+.btn--offer:hover {
+	background: var(--btn-offer-bg-hover);
+}
+.btn--offer:after {
+	content: "→";
+	margin-left: var(--spacing-4);
+}
+.btn--offer svg {
+	color: var(--btn-offer-bg-hover);
+}
+
+
+
+.btn--menu {
+	text-decoration: none;
+	font-size: var(--text-lg);
+	font-weight: var(--font-semibold);
+	font-family: var(--font-sans);
+	border-color: var(--btn-menu-bg);
+	background: var(--btn-menu-bg);
+	color: var(--btn-menu-color) !important;
+}
+.btn--menu:hover {
+	background: var(--btn-menu-bg-hover);
+}
+/*.btn--menu:after {
+	content: "→";
+	margin-left: var(--spacing-4);
+}*/
+.btn--menu svg {
+	color: var(--color-green-600);
+}
+
+
+.btn--cta {
+	text-decoration: none;
+	font-size: var(--text-2xl);
+	font-weight: var(--font-semibold);
+	border-color: var(--btn-cta-bg);
+	background: var(--btn-cta-bg);
+	color: var(--btn-cta-color) !important;
+}
+.btn--cta:hover {
+	background: var(--btn-cta-bg-hover);
+}
+.btn--cta:after {
+	content: "→";
+	margin-left: var(--spacing-4);
+}
+.btn--cta svg {
+	color: var(--color-green-600);
+}
+
+
+.btn--call {
+	text-decoration: none;
+	font-size: var(--text-2xl);
+/*	text-transform: uppercase;*/
+	font-weight: var(--font-heavy);
+	border-color: var(--btn-cta-bg);
+	background: var(--btn-cta-bg);
+	color: var(--btn-cta-color) !important;
+}
+.btn--call:hover {
+	background: var(--btn-cta-bg-hover);
+}
+.btn--call:before {
+	content: "📞";
+	padding-right: var(--spacing-4);
+}
+.btn--call:after {
+/*	content: "→";
+	margin-left: var(--spacing-4);*/
+}
+.btn--call svg {
+	color: var(--color-green-600);
+}
+
+
+
+.btn--box {
+	text-decoration: none;
+	font-size: var(--text-2xl);
+	font-weight: var(--font-semibold);
+	border-color: var(--btn-box-bg);
+	background: var(--btn-box-bg);
+	color: var(--btn-box-color) !important;
+	box-shadow: 0 -2px 0 0 rgba(0,0,0,.1) inset;
+}
+.btn--box:hover {
+	background: var(--btn-box-bg-hover);
+}
+.btn--box:after {
+	content: "→";
+	margin-left: var(--spacing-4);
+}
+.btn--box svg {
+	color: var(--color-green-600);
+}
+
+
+.btn--box-call {
+	text-decoration: none;
+	font-size: var(--text-2xl);
+	font-weight: var(--font-semibold);
+	background: var(--color-call-btn-bg);
+	color: var(--color-call-btn-text) !important;
+	border-bottom: 0px solid var(--color-call-btn-border);
+	box-shadow: 0 -2px 0 0 rgba(0,0,0,.1) inset;
+}
+.btn--box-call:hover {
+	background: var(--color-call-btn-bg);
+}
+.btn--box-call:after {
+	content: "→";
+	margin-left: var(--spacing-4);
+}
+.btn--box-call svg {
+	color: var(--color-call-btn-bg);
+}
+

@@ -1,0 +1,3 @@
+extends: fields/auto-content
+label: Leader
+field: leader

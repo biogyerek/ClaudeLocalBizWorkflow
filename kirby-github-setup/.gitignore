@@ -1,0 +1,27 @@
+# Kirby CMS
+/site/cache/*
+/site/sessions/*
+/site/accounts/*
+/content/*
+!/content/.gitkeep
+/media/*
+
+# Environment
+.env
+.env.local
+
+# Dependencies
+/vendor
+composer.lock
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

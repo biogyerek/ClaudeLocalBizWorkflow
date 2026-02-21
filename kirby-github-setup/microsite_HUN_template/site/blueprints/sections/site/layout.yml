@@ -1,0 +1,91 @@
+type: fields
+
+fields:
+
+  colors:
+    label: Brand colors
+    type: headline
+  colorBrand:
+    label: Brand color
+    type: color
+    width: 1/6
+    help: Main background colors
+  colorText:
+    label: Menu text color
+    type: color
+    width: 1/6
+  colorBtn:
+    label: CTA color
+    type: color
+    width: 1/6
+    help: Main CTA color
+  colorBtnHover:
+    label: CTA hover color
+    type: color
+    width: 1/6
+    help: Main CTA Hover color
+  colorBtnText:
+    type: color
+    label: CTA text color
+    width: 1/6
+    help: CTA text color
+  colorLinks:
+    label: Link color
+    type: color
+    width: 1/6
+    help: Main link color
+  colorUnderline:
+    label: Underline & hover color
+    type: color
+    width: 1/6
+    help: Link underline & hover color
+
+  images:
+    label: Brand images
+    type: headline
+
+  logo:
+    label: Logo image
+    type: files
+    max: 1
+    width: 1/6
+    layout: cards
+    image:
+      ratio: 16/9
+      cover: false
+    uploads:
+      template: logo
+  logoWidth:
+    label: Width of logo
+    type: number
+    after: "px"
+    width: 1/6
+    help: Width of header logo image
+  logoWidthMobile:
+    label: Width of mobile logo
+    type: number
+    after: "px"
+    width: 1/6
+    help: Width of header logo image on mobile
+  favicon:
+    label: Favicon image
+    type: files
+    max: 1
+    width: 1/6
+    help: Make sure to rename file to favicon.png
+    uploads:
+        parent: site
+        uploads: favicon
+
+  coverimage:
+    extends: fields/coverimage
+    label: Default hero image
+    help: Hero image to fall back on site-wide
+
+  customCss:
+    label: Custom CSS
+    type: textarea
+    buttons: false
+    size: huge
+    font: monospace
+    translate: false

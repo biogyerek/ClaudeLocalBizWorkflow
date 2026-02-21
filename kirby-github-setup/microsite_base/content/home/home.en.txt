@@ -1,0 +1,361 @@
+Title: Főoldal
+
+----
+
+Showleader: true
+
+----
+
+Coverimage: - file://i5RtD7gFWvI8TOfR
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text: 
+
+----
+
+Exampletext: 
+
+----
+
+Showservices: true
+
+----
+
+Titleservices: 
+
+----
+
+Services: 
+
+----
+
+Showusps: true
+
+----
+
+Titleusps: 
+
+----
+
+Usps:
+
+-
+  title: Több mint 10 év tapasztalat
+  text: >
+    Szakembereink évtizedes tapasztalattal
+    rendelkeznek az asztalos iparágban
+  icon: [ ]
+-
+  title: Egyedi tervezés
+  text: >
+    Minden bútor az Ön igényeire szabva,
+    személyre szabott megoldásokkal
+  icon: [ ]
+-
+  title: Minőségi alapanyagok
+  text: >
+    Csak a legjobb minőségű fa és
+    alapanyagokat használjuk
+  icon: [ ]
+-
+  title: Gyors határidők
+  text: >
+    Pontos munkavégzés és határidők
+    betartása garantált
+  icon: [ ]
+
+----
+
+Showfaq: true
+
+----
+
+Titlefaq: 
+
+----
+
+Faq:
+
+-
+  question: Milyen szolgáltatásokat kínálnak?
+  answer: >
+    Beépített szekrény készítést, bútor
+    javítást, egyedi bútor készítést és
+    egyedi konyhabútor készítést kínálunk
+    Budapest egész területén.
+  toggle: false
+-
+  question: Mennyi idő alatt készül el egy egyedi bútor?
+  answer: >
+    Az elkészítési idő a projekt
+    nagyságától függ, általában 2-4 hét.
+    Pontos időpontot az első konzultáción
+    tudunk megadni.
+  toggle: false
+-
+  question: Milyen területeken dolgoznak?
+  answer: >
+    Budapest egész területén és környékén
+    vállalunk munkát, mind lakóingatlanok,
+    mind üzleti helyszínek esetében.
+  toggle: false
+-
+  question: Kérhetünk ingyenes árajánlatot?
+  answer: >
+    Igen, ingyenes árajánlatot és
+    konzultációt biztosítunk minden
+    érdeklődőnek. Hívjon minket bizalommal!
+  toggle: false
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Promptpage: 
+
+----
+
+Formatleader: 
+
+----
+
+Exampleleader: 
+
+----
+
+Exampleintro: 
+
+----
+
+Exampledescription: 
+
+----
+
+Introknowledge: 
+
+----
+
+Textknowledge: 
+
+----
+
+Leaderknowledge: 
+
+----
+
+Showusp: 1
+
+----
+
+Meta-title: 
+
+----
+
+Meta-description: 
+
+----
+
+Meta-canonical-url: 
+
+----
+
+Meta-author: 
+
+----
+
+Meta-image: 
+
+----
+
+Meta-phone-number: 
+
+----
+
+Og-title: 
+
+----
+
+Og-description: 
+
+----
+
+Og-image: 
+
+----
+
+Og-site-name: 
+
+----
+
+Og-url: 
+
+----
+
+Og-audio: 
+
+----
+
+Og-video: 
+
+----
+
+Og-determiner: 
+
+----
+
+Og-type: 
+
+----
+
+Og-type-article-published-time: 
+
+----
+
+Og-type-article-modified-time: 
+
+----
+
+Og-type-article-expiration-time: 
+
+----
+
+Og-type-article-author: 
+
+----
+
+Og-type-article-section: 
+
+----
+
+Og-type-article-tag: 
+
+----
+
+Twitter-title: 
+
+----
+
+Twitter-description: 
+
+----
+
+Twitter-image: 
+
+----
+
+Twitter-card-type: 
+
+----
+
+Twitter-site: 
+
+----
+
+Twitter-creator: 
+
+----
+
+Robots-noindex: 
+
+----
+
+Robots-nofollow: 
+
+----
+
+Robots-noarchive: 
+
+----
+
+Robots-noimageindex: 
+
+----
+
+Robots-nosnippet: 
+
+----
+
+Titlecontact: Contact
+
+----
+
+Contacttext: 
+
+----
+
+Contactpage: 
+
+----
+
+Uuid: O404rqH9cPDQ5tVy

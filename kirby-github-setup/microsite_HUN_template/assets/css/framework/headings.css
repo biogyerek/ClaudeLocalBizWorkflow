@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-title);
+	font-weight: var(--font-bold);
+}
+h1 {
+	font-size: var(--text-5xl);
+	margin-top: var(--spacing-0);
+	margin-bottom: var(--spacing-8);
+	line-height: var(--leading-tight);
+}
+h2 {
+	font-size: var(--text-4xl);
+	margin-top: var(--spacing-16);
+	margin-bottom: var(--spacing-4);
+}
+h5 {
+	font-family: var(--font-title);
+	font-size: var(--text-xl);
+	margin-top: var(--spacing-16);
+	margin-bottom: var(--spacing-4);
+}

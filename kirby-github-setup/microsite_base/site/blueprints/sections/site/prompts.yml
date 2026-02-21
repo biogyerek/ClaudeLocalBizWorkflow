@@ -1,0 +1,154 @@
+type: fields
+fields:
+  promptHeadline:
+    label: Promptok
+    type: headline
+  promptMaster:
+    label: Fő prompt
+    extends: fields/prompt
+  promptKnowledge:
+    label: Oldal prompt
+    extends: fields/prompt
+    
+  lineA:
+    type: line
+
+  fieldPromptsHeadline:
+    label: Mező promptok és formátumok - Általános
+    type: headline
+  promptLeader:
+    label: Bevezető
+    extends: fields/prompt
+    width: 1/2
+  promptIntro:
+    label: Bemutatkozás
+    extends: fields/prompt
+    width: 1/2
+  promptText:
+    label: Fő szöveg
+    extends: fields/prompt
+    width: 1/2
+  promptSummary:
+    label: Összefoglaló
+    extends: fields/prompt
+    width: 1/2
+  promptMission:
+    extends: fields/prompt
+    width: 1/2
+  promptTagline:
+    extends: fields/prompt
+    width: 1/2
+  promptContact:
+    extends: fields/prompt
+    width: 1/2
+  promptProfile:
+    extends: fields/prompt
+    width: 1/2
+
+  lineB:
+    type: line
+
+  fieldPromptsServiceHeadline:
+    label: Mező promptok és formátumok - Szolgáltatás oldal
+    type: headline
+  promptServicepage:
+    label: Szolgáltatás oldal
+    extends: fields/prompt
+    width: 1/2
+  promptServiceLeader:
+    label: Szolgáltatás bevezető
+    extends: fields/prompt
+    width: 1/2
+  promptServiceIntro:
+    label: Szolgáltatás bemutatkozás
+    extends: fields/prompt
+    width: 1/2
+  promptServiceDescription:
+    label: Szolgáltatás leírások
+    extends: fields/prompt
+    width: 1/2
+
+  lineC:
+    type: line
+
+  fieldPromptsHomeHeadline:
+    label: Mező promptok és formátumok - Kezdőlap
+    type: headline
+  promptHomepage:
+    label: Kezdőlap
+    extends: fields/prompt
+    width: 1/2
+
+  lineD:
+    type: line
+
+  fieldPromptsServicesHeadline:
+    label: Mező promptok és formátumok - Szolgáltatások oldal
+    type: headline
+  promptServicespage:
+    label: Szolgáltatások oldal
+    extends: fields/prompt
+    width: 1/2
+  # promptServicesLeader:
+  #   label: Services Leader
+  #   extends: fields/prompt
+  #   width: 1/2
+  promptServicesIntro:
+    label: Szolgáltatások bemutatkozás
+    extends: fields/prompt
+    width: 1/2
+
+
+  lineE:
+    type: line
+
+  fieldPromptsAboutHeadline:
+    label: Mező promptok és formátumok - Rólunk
+    type: headline
+  promptAboutpage:
+    label: Rólunk oldal
+    extends: fields/prompt
+    width: 1/2
+
+
+  lineF:
+    type: line
+
+  fieldPromptsLocationsHeadline:
+    label: Mező promptok és formátumok - Települések
+    type: headline
+  promptServiceAreaspage:
+    label: Szolgáltatási területek oldal
+    extends: fields/prompt
+    width: 1/2
+  promptServiceAreasText:
+    label: Szolgáltatási területek szöveg
+    extends: fields/prompt
+    width: 1/2
+  promptLocationpage:
+    label: Település oldal
+    extends: fields/prompt
+    width: 1/2
+  promptLocationText:
+    label: Település szöveg
+    extends: fields/prompt
+    width: 1/2
+
+  lineG:
+    type: line
+
+  fieldPromptsFaqHeadline:
+    label: Mező promptok és formátumok - Szolgáltatás oldalak
+    type: headline
+  promptEstimatepage:
+    label: Árajánlat oldal
+    extends: fields/prompt
+    width: 1/2
+  promptContactpage:
+    label: Árajánlat oldal
+    extends: fields/prompt
+    width: 1/2
+  promptFaqpage:
+    label: GYIK oldal
+    extends: fields/prompt
+    width: 1/2

@@ -1,0 +1,55 @@
+type: fields
+
+fields:
+  setup:
+    label: Technical setup
+    type: headline
+  # analytics:
+  #   label: Google Analytics tracking code
+  #   type: text
+  #   before: "G-"
+  #   minlength: 10
+  #   maxlength: 10
+  #   buttons: false
+  #   help: Only paste the Google Tracking Tag (without "G-")
+  #   font: monospace
+  #   translate: false
+  # contactForm:
+  #   label: Contact form embed code
+  #   type: text
+  #   buttons: false
+  #   help: Paste in the ConvertBox-embed code (full HTML tag)
+  #   font: monospace
+  #   width: 1/2
+  # estimateForm:
+  #   label: Estimate form embed code
+  #   type: text
+  #   buttons: false
+  #   help: Paste in the ConvertBox-embed code (full HTML tag)
+  #   font: monospace
+  #   width: 1/2
+
+  locationFile:
+    icon: upload
+    type: files
+    max: 1
+    width: 1/3
+
+  whatconverts:
+    label: WhatConverts tracking code
+    type: textarea
+    buttons: false
+    help: Paste the entire tracking code
+    font: monospace
+    translate: false
+    width: 1/3
+
+  conversionTracking:
+    label: Conversion tracking code
+    type: textarea
+    buttons: false
+    help: Paste the entire tracking code
+    font: monospace
+    translate: false
+    width: 1/3
+

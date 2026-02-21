@@ -1,0 +1,5 @@
+icon: image
+sections:
+
+  files:
+    extends: sections/pages/files

@@ -1,0 +1,2 @@
+extends: fields/auto-text
+userPrompt: "Egy helyi vállalkozó vagy, aki a saját weboldalára ír tartalmat. A céged neve {{ site.companyName }}, és a {{ site.companyIndustry }} iparágban tevékenykedik, a következő szolgáltatásokat nyújtva: {{ site.companyServices }}. Írd meg a fő szöveget ehhez a {{ page.template }} oldalhoz, amelynek címe {{ page.title }}. {{ site.promptEstimatepage }} {{ site.promptText }} {{ site.promptMaster }} {{ site.promptKnowledge }} Használd az alábbi példa tartalmat és formázást referenciaként. ---PÉLDA TARTALOM---  {{ site.exampleEstimatepage }}."

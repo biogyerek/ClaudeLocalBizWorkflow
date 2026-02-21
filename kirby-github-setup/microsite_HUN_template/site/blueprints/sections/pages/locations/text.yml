@@ -1,0 +1,21 @@
+type: fields
+fields:
+
+  headlineText:
+    label: Page text
+    type: headline
+  locationsleader:
+    label: Leader
+    type: textarea
+    when:
+      showlocationsleader: true
+  locationsintro:
+    label: Intro
+    type: textarea
+    size: small
+    help: Displayed above 'Locations'-section
+  locationstext:
+    label: Text
+    type: textarea
+    size: huge
+    help: Displayed below 'Locations'-section

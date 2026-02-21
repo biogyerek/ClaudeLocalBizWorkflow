@@ -1,0 +1,13 @@
+{
+  "name": "kirby-github-setup",
+  "version": "1.0.0",
+  "description": "A streamlined setup for deploying and managing Kirby CMS projects on GitHub",
+  "keywords": [
+    "kirby",
+    "cms",
+    "github",
+    "deployment"
+  ],
+  "author": "",
+  "license": "MIT"
+}

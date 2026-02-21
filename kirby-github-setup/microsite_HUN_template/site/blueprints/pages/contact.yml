@@ -1,0 +1,38 @@
+title: Contact
+
+options:
+  changeTemplate:
+    - article
+    - blog
+    - hub
+    - directory
+    - estimate
+    - contact
+    
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/contact/auto-leader
+          auto-text:
+            extends: prompts/contact/auto-text
+
+      main:
+        width: 2/3
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  seo: seo/page

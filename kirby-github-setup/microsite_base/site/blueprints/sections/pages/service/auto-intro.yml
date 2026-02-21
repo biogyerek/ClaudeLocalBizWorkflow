@@ -1,0 +1,6 @@
+type: copilot
+# label: Intro text
+field: serviceintro
+files: auto
+editable: true
+userPrompt: You're a local business owner writing for his website. Your company is called {companyName} and is in the {companyIndustry} industry, providing the services {companyServices}. Write the intro copy for this {{ page.template }} page called {{ page.title }}. {promptPage} {{ site.promptIntro }} {{ site.promptMaster }} Reference the example content and formatting from {exampleIntro}.

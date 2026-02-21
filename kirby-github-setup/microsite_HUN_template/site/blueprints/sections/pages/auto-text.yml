@@ -1,0 +1,7 @@
+type: copilot
+label: Main text
+field: text
+files: auto
+editable: true
+userPrompt: You're a local business owner writing for his website. Your company is called {companyName} and is in the {companyIndustry} industry, providing the services {companyServices}. Write the main copy for this {{ page.template }} page called {{ page.title }}. {promptPage} {{ site.promptText }} {{ site.promptMaster }} Reference the example content and formatting from {exampleText}.
+# userPrompt: Write the main copy for this {{ page.template }} page called {{ page.title }} for a local {companyIndustry} company from {companyLocation} called {{ site.title }}. Segment the text in H2 and H3 subheadings and format in plain Markdown formatting. Don't include image tags and hyperlinks. Follow the example copy and formatting from {exampleText}.

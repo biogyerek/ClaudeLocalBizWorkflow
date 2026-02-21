@@ -1,0 +1,50 @@
+type: fields
+
+fields:
+
+  footerBuilder:
+    label: Footer Builder
+    type: headline
+
+  quickLinks:
+    type: pages
+    label: Footer quick links
+    translate: false
+    width: 1/4
+  footerLinks:
+    type: pages
+    label: Footer service links
+    translate: false
+    width: 1/4
+  footerCenterText:
+    type: toggle
+    text: Center text in footer?
+    translate: false
+    width: 1/4
+
+  footerShowSocials:
+    type: toggle
+    text: Show socials in footer?
+    translate: false
+    width: 1/4
+
+  # migrated to language files
+  # footerTitles:
+  #   label: Footer Titles
+  #   type: headline
+  # footerTitleAbout:
+  #   label: Title About Us
+  #   type: text
+  #   width: 1/4
+  # footerTitleQuickLinks:
+  #   label: Title Quick Links
+  #   type: text
+  #   width: 1/4
+  # footerTitleContact:
+  #   label: Title Contact
+  #   type: text
+  #   width: 1/4
+  # footerTitleFollow:
+  #   label: Title Follow
+  #   type: text
+  #   width: 1/4

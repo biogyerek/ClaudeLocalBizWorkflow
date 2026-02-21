@@ -1,0 +1,13 @@
+{
+  "name": "kirby-github-setup",
+  "description": "Kirby CMS GitHub setup",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "getkirby/cms": "^4.0"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}

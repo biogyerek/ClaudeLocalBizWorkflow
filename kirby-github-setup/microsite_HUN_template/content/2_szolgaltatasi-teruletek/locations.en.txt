@@ -1,0 +1,169 @@
+Title: Szolgáltatási területek
+
+----
+
+Showlocationsleader: true
+
+----
+
+Locationscoverimage: 
+
+----
+
+Locationsleader: 
+
+----
+
+Locationsintro: 
+
+----
+
+Locationstext: 
+
+----
+
+Showtemplateleader: true
+
+----
+
+Toc: false
+
+----
+
+Showsummary: true
+
+----
+
+Coverimage: 
+
+----
+
+Cta: 
+
+----
+
+Headline: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Summary: 
+
+----
+
+Text: 
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Showleader: true
+
+----
+
+Showserviceleader: true
+
+----
+
+Servicecoverimage: 
+
+----
+
+Directoryleader: 
+
+----
+
+Serviceintro: 
+
+----
+
+Servicedescription: 
+
+----
+
+Servicetext: 
+
+----
+
+Toc-alt: false
+
+----
+
+Toc-title: 
+
+----
+
+Uuid: 9CxEpkDHP0Giffoe

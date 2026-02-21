@@ -1,0 +1,9 @@
+type: fields
+
+fields:
+
+  structuredData:
+    label: Structured Data (site-wide)
+    type: textarea
+    size: large
+    buttons: false

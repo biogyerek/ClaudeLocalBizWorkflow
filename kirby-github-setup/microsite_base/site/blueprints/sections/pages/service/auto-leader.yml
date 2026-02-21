@@ -1,0 +1,7 @@
+type: copilot
+label: Leader text
+field: leader
+files: false
+editable: false
+userPrompt: Write the leader copy for this {{ page.template }} page called {{ page.title }} for a local {companyIndustry} company from {companyLocation} called {{ site.title }}. Format in plain Markdown formatting. Omit the Markdown declaration. Follow the formatting rules from {FormatLeader}. Follow the example copy and formatting from {exampleLeader}.
+# userPrompt: You're a local business owner writing for his website. Your company is called {companyName} and is in the {companyIndustry} industry, providing the services {companyServices} in {companyArea}. Write the intro copy for this {{ page.template }} page called {{ page.title }}. {promptPage} {{ site.promptIntro }} {{ site.promptMaster }} Reference the example content and formatting from {exampleText}.

@@ -1,0 +1,106 @@
+:root {
+  --header-bg: var(--color-menu-bg);
+}
+
+header {
+  background: var(--header-bg);
+  padding: var(--spacing-4) 0;
+  position: sticky; top: 0;
+  z-index: 99 !important;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+.header {
+  display: grid;
+  max-width: var(--container);
+  grid-template-columns: 1fr;
+  align-items: start;
+  padding: 0 var(--container-padding);
+}
+.header .menu {
+  text-align: left;
+/*  margin: 0 auto;*/
+/*  display: none;*/
+  padding: var(--spacing-4) 0;
+}
+.logo {
+  width: 100%;
+  max-width: var(--logo-width-mobile);
+  text-align: center;
+}
+.logo a img {
+  margin: 0 auto;
+}
+
+/* HAMBURGER TOGGLE */
+.menu {
+  display: none;
+}
+.menu.show {
+  display: block;
+  clear: both;
+  -webkit-animation: slide-down .2s ease-out;
+  -moz-animation: slide-down .2s ease-out;
+}
+
+@-webkit-keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translateY(-100%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-down {
+      0% { opacity: 0; -moz-transform: translateY(-100%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
+}
+
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  padding-bottom: 1.125em;
+  padding-right: 1.125em;
+  top: 0.5625em;
+}
+.hamburger:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 40rem) {
+
+}
+
+@media screen and (min-width: 72rem) {
+
+  header {
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: var(--container);
+    align-items: center;
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+  }
+  .header .menu {
+    display: block;
+    text-align: right;
+    grid-column: 3;
+    align-self: center;
+    padding: 0;
+  }
+
+  .logo {
+    max-width: var(--logo-width);
+    width: var(--logo-width);
+  }
+  .menuToggle {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 72rem) {
+
+}

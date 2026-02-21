@@ -1,0 +1,51 @@
+title: Admin
+
+columns:
+  left:
+    width: 2/3
+    fields:
+      byline:
+        label: Byline
+        type: text
+        maxlength: 100
+      bio:
+        label: Bio
+        type: textarea
+        maxlength: 200
+      bio_long:
+        label: Extended Bio
+        type: textarea
+        size: large
+
+  right:
+    width: 1/3
+    fields:
+      position:
+        label: Position
+        type: text
+        maxlength: 30
+      occupation:
+        label: Occupation
+        type: text
+        maxlength: 30
+      qualifications:
+        label: Qualifications
+        type: text
+        maxlength: 50
+      country:
+        label: Country
+        type: text
+      website:
+        label: Website
+        type: url
+      feature:
+        label: Featured Article
+        type: pages
+        query: site.grandchildren.filterBy('template', 'article')
+        max: 1
+        layout: cards
+      picks:
+        label: Favorite Articles
+        type: pages
+        query: site.grandchildren.filterBy('template', 'article')
+        max: 4

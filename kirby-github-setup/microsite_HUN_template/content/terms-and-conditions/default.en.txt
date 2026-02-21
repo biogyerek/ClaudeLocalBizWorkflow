@@ -1,0 +1,116 @@
+Title: Terms and Conditions
+
+----
+
+Showleader: false
+
+----
+
+Coverimage: 
+
+----
+
+Leader: 
+
+----
+
+Intro: 
+
+----
+
+Text:
+
+Welcome to the {{ companyName }} site. By accessing or using this site, you agree to the terms described below.  
+
+## Acceptable Use
+This site may only be used for lawful purposes and in ways that do not interfere with other users’ access. It is provided to share information about our roofing services and allow inquiries regarding installations and repairs.  
+
+## Ownership Rights
+All text, graphics, images, software, and other content are owned by {{ companyName }} or its licensors. No material may be copied, modified, or distributed without prior written approval.  
+
+## Limitation of Responsibility
+{{ companyName }} provides this site “as is” and disclaims all warranties. We are not liable for any damages that may result from use of the site, including indirect or consequential damages.  
+
+## External Links
+Links to third-party websites may appear on this site. We do not control or endorse the content on external sites and are not responsible for their accuracy.  
+
+## Privacy
+Your use of this site is subject to our Privacy Policy, available separately on this website.  
+
+## Updates to Terms
+We may update these terms at any time without notice. Continued use of the site indicates acceptance of the updated terms.  
+
+## Governing Law
+These terms are governed by the laws of Maryland, and any disputes fall under the exclusive jurisdiction of Maryland courts.
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Uuid: 4qQwONcLIRkmQ7kJ

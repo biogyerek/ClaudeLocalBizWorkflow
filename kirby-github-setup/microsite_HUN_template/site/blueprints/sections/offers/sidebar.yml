@@ -1,0 +1,16 @@
+type: fields
+fields:
+
+  sidebarTitle:
+    label: Sidebar offer
+    type: headline
+  sidebarImage:
+    type: files
+    max: 1
+    layout: cards
+    width: 1/4
+    translate: false
+  sidebar:
+    type: textarea
+    label: Site-wide sidebar content
+    width: 1/2

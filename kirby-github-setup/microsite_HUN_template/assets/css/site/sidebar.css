@@ -1,0 +1,62 @@
+/* START SIDEBAR */
+
+.sidebar {
+  display: none;
+  max-width: 100%;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  margin-top: 1rem;
+  top: 3rem;
+  display: block;
+  z-index: 98;
+  padding-top: var(--spacing-20);
+}
+
+
+.sidebar figure {
+  width: 70%;
+  margin: 0 auto;
+}
+.sidebar figure img {
+  text-align: center;
+}
+
+/* SIDEBAR OFFER BOX STYLING */
+
+.sidebar-offer {
+  max-width: 100%;
+  text-align: center;
+  background: var(--color-yellow-400);
+  margin: 0;
+  padding: var(--spacing-8) var(--spacing-4);
+  border: 1px solid var(--color-yellow);
+}
+
+.sidebar-offer h2 {
+  font-size: var(--text-2xl);
+  margin-top: 0;
+}
+.sidebar-offer p {
+  font-size: var(--text-base);
+}
+.sidebar-offer a.btn {
+  margin-top: var(--spacing-8);
+  white-space: unset;
+/*  font-size: var(--text-xl);*/
+}
+
+
+@media screen and (min-width: 40rem) {
+  .sidebar-offer {
+/*    margin: var(--spacing-24) 0;
+    padding: var(--spacing-16);*/
+  }
+}
+
+@media screen and (min-width: 72rem) {
+  .sidebar {
+    display: block;
+  }
+}

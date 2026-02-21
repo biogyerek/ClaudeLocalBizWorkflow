@@ -1,0 +1,271 @@
+Title: Adatvédelmi Nyilatkozat
+
+----
+
+Showleader: false
+
+----
+
+Coverimage:
+
+----
+
+Leader:
+
+----
+
+Intro:
+
+----
+
+Text:
+
+# Adatvédelmi és Adatkezelési Szabályzat
+
+Ez az alkalmazás bizonyos személyes adatokat gyűjt a felhasználóktól.
+> **Adatkezelő**: {{ siteName }}
+> **Kapcsolat e-mail**: {{ emailPrivacy }}
+
+## Gyűjtött Adatok
+Az alábbi adatokat gyűjthetjük:
+- Sütik (Cookies)
+- Használati adatok (pl. eszközinformáció, IP-cím, böngészési tevékenység)
+
+Egyes adatokat a felhasználók közvetlenül adnak meg, míg más adatok automatikusan kerülnek gyűjtésre.
+
+## Adatfeldolgozás Módja
+- Az adatokat megfelelő technikai és szervezési intézkedésekkel védjük.
+- A feldolgozás biztonságos rendszerekkel történik, és munkatársakat vagy külső szolgáltatókat (informatika, hosting, kommunikáció) vonhat be.
+- A jogalapok közé tartozik a felhasználó hozzájárulása, szerződéses kötelezettségek, jogi megfelelés, közérdek vagy jogos üzleti érdekek.
+
+## Tárolás és Megőrzés
+Az adatokat csak a gyűjtés céljaihoz szükséges ideig tároljuk:
+- A szerződések teljesítéséig.
+- A jogos érdekek eléréséig.
+- A hozzájárulás visszavonásáig (ahol alkalmazható).
+- Vagy a jogszabály által előírt ideig.
+
+A megőrzési időszak végén az adatok biztonságosan törlésre kerülnek.
+
+## Adatgyűjtés Célja
+Az adatokat az alábbi célokra dolgozzuk fel:
+- Szolgáltatások nyújtása
+- Analitika biztosítása
+- Közösségi hálózatokkal való interakció
+- Partner programok működtetése (pl. Amazon Associates)
+
+## Felhasználói Jogok
+A felhasználók jogosultak:
+- Hozzájárulás visszavonására
+- Feldolgozás elleni tiltakozásra
+- Hozzáférés vagy javítások kérésére
+- Adatok törlésének kérésére
+- Feldolgozás korlátozására vagy megszorítására
+- Adathordozhatóság kérésére
+- Panasz benyújtására az adatvédelmi hatóságokhoz
+
+## További Információk
+- Az adatok jogi kötelezettségek teljesítésére is felhasználhatók.
+- Naplók technikai karbantartás céljából gyűjthetők.
+- Ez az oldal nem veszi figyelembe a "Do Not Track" jelzéseket.
+- Ezt a szabályzatot bármikor frissíthetjük, az értesítést ezen az oldalon tesszük közzé.
+
+----
+
+Exampletext: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Meta-title: 
+
+----
+
+Meta-description: 
+
+----
+
+Meta-canonical-url: 
+
+----
+
+Meta-author: 
+
+----
+
+Meta-image: 
+
+----
+
+Meta-phone-number: 
+
+----
+
+Og-title: 
+
+----
+
+Og-description: 
+
+----
+
+Og-image: 
+
+----
+
+Og-site-name: 
+
+----
+
+Og-url: 
+
+----
+
+Og-audio: 
+
+----
+
+Og-video: 
+
+----
+
+Og-determiner: 
+
+----
+
+Og-type: 
+
+----
+
+Og-type-article-published-time: 
+
+----
+
+Og-type-article-modified-time: 
+
+----
+
+Og-type-article-expiration-time: 
+
+----
+
+Og-type-article-author: 
+
+----
+
+Og-type-article-section: 
+
+----
+
+Og-type-article-tag: 
+
+----
+
+Twitter-title: 
+
+----
+
+Twitter-description: 
+
+----
+
+Twitter-image: 
+
+----
+
+Twitter-card-type: 
+
+----
+
+Twitter-site: 
+
+----
+
+Twitter-creator: 
+
+----
+
+Robots-noindex: 
+
+----
+
+Robots-nofollow: 
+
+----
+
+Robots-noarchive: 
+
+----
+
+Robots-noimageindex: 
+
+----
+
+Robots-nosnippet: 
+
+----
+
+Uuid: i43AK5fUwxAmPLvu

@@ -1,0 +1,141 @@
+:root {
+	--leader-height: 850px;
+}
+
+
+/* SERVICE */
+.services-container {
+	background: var(--color-blue-200);
+	padding: var(--spacing-20) 0;
+	margin-top: var(--spacing-20);
+	text-align: center;
+}
+.services {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: var(--spacing-5);
+}
+.service-box {
+	background: rgba(0, 0, 0, 0.3);
+  	background-blend-mode: multiply;
+	display: grid;
+	grid-template-rows: 1fr 3fr 1fr;
+	grid-gap: var(--spacing-6);
+	padding: var(--spacing-12);
+}
+.service-box h3.service-heading {
+	font-size: var(--text-2xl);
+	color: white;
+	text-shadow: 0px 0px 4px black;
+}
+.service-box span.service-description {
+	color: white;
+	align-self: start;
+	text-shadow: 0px 0px 2px black;
+	font-size: var(--text-xl);
+}
+.service-box a {
+	align-self: end;
+}
+
+
+/* USPS */
+
+section.usp-container {
+	background: var(--color-green-200);
+	padding: var(--spacing-20) 0;
+	text-align: center;
+}
+.usps {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: var(--spacing-5);
+	text-align: center;
+}
+.usp-box {
+	background: white;
+	padding: var(--spacing-6);
+	text-align: center;
+}
+.usp-box img {
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+	margin-bottom: var(--spacing-4);
+}
+.usp-box h3.usp-heading {
+	font-size: var(--text-xl);
+	font-weight: var(--font-normal);
+}
+.usp-button {
+	margin: auto;
+	text-align: center;
+	margin-top: var(--spacing-16);
+}
+.usp-button .btn {
+	font-size: var(--text-2xl);
+}
+
+
+/* FAQ SECTION */
+
+section.faq {
+	background: white;
+	padding: var(--spacing-20) 0;
+}
+.faq h4 {
+	color: var(--color-blue-700);
+}
+.faq h2, .faq h4 {
+	margin-top: 0;
+	text-align: center;
+}
+.faq h2 {
+	margin-bottom: var(--spacing-10);
+}
+.faq h3 {
+	display: inline-block;
+	margin-left: var(--spacing-1);
+	font-size: var(--text-2xl);
+}
+.faq .question details {
+	background-color: var(--color-gray-100);
+	box-sizing: border-box;
+	border: var(--color-gray-200) 1px solid;
+	border-radius: 0px 0px 8px 8px;
+	margin-bottom: var(--spacing-3);
+}
+.faq .question summary {
+	background-color: var(--color-blue);
+	color: white;
+	padding: var(--spacing-3) var(--spacing-5);
+	border-radius: 8px 8px 0px 0px;
+	border: 2px solid transparent;
+}
+.faq .question summary:focus {
+	border-color: var(--color-blue-700);
+}
+.faq .question details p {
+	font-size: var(--text-lg);
+	padding: var(--spacing-5);
+}
+
+@media screen and (min-width: 40rem) {
+	:root {
+		--leader-height: 900px;
+	}
+	.usps {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 72rem) {
+	.services {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: var(--spacing-12);
+	}
+	.usps {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}

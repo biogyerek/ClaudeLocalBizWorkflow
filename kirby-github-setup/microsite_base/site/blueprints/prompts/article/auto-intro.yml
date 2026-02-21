@@ -1,0 +1,2 @@
+extends: fields/auto-intro
+userPrompt: "Ön egy helyi vállalkozó, aki a saját weboldalára ír. A cége neve {{ site.companyName }}, és a {{ site.companyIndustry }} iparágban tevékenykedik, a következő szolgáltatásokat nyújtja: {{ site.companyServices }}. Írja meg a bevezető szöveget ehhez a blogbejegyzéshez, amelynek címe {{ page.title }}. A bevezető legyen informatív és vonzó, röviden összefoglalva a cikk tartalmát. {{ site.promptMaster }} {{ site.promptIntro }}."

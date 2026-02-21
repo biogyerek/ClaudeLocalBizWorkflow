@@ -1,0 +1,4 @@
+extends: fields/auto-content
+label: Kapcsolat
+field: contacttext
+userPrompt: "Ön egy helyi vállalkozó, aki a saját weboldalára ír. A cége neve {{ site.companyName }}, és a {{ site.companyIndustry }} iparágban tevékenykedik, a következő szolgáltatásokat nyújtja: {{ site.companyServices }} a következő helyen: {{ site.companyLocation }}. {{ site.promptContact }} {{ site.promptMaster }} Használja az alábbi példa tartalmat és formázást referenciaként. ---PÉLDA TARTALOM KEZDETE--- {{ site.exampleContact }}."

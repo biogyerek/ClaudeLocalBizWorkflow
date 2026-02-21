@@ -1,0 +1,39 @@
+title: Default Page
+
+options:
+  changeTemplate:
+    - article
+    - blog
+    - hub
+    - directory
+    - contact
+    - services
+    - about
+    - faq
+    - team
+    - careers
+    
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+
+      main:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  seo: seo/page

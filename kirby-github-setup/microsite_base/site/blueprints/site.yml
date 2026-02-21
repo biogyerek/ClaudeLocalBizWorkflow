@@ -1,0 +1,119 @@
+title: Site
+
+tabs:
+
+  pages:
+    icon: page
+    sections:
+
+      pages:
+        type: pages
+        sortable: true
+
+  files:
+    icon: image
+    sections:
+
+      files:
+        type: files
+        layout: cards
+
+  locations:
+    label: Locations
+    icon: pin
+    sections:
+
+      locations:
+        type: pages
+        headline: Locations
+        template: location
+        parent: site.find('szolgaltatasi-teruletek')
+        create: false
+
+
+  services:
+    label: Services
+    icon: store
+    sections:
+
+      services:
+        type: pages
+        headline: Services
+        template: service
+        layout: cards
+
+
+  offers:
+    label: Offers
+    icon: money
+    sections:
+
+      boxes:
+        extends: sections/offers/boxes
+      popup:
+        extends: sections/offers/sidebar
+
+
+  setup:
+    icon: sparkling
+    sections:
+
+      default:
+        extends: sections/offers/default      
+      setup:
+        extends: sections/site/setup
+      layout:
+        extends: sections/site/layout
+
+  site-settings:
+    label: Site-Wide Settings
+    icon: home
+    sections:
+
+      variables:
+        extends: sections/site/variables
+      address:
+        extends: sections/site/address
+      marketing:
+        extends: sections/site/marketing
+      auto-mission:
+        extends: prompts/site/auto-mission
+      auto-tagline:
+        extends: prompts/site/auto-tagline
+      auto-backstory:
+        extends: prompts/site/auto-backstory
+      contact:
+        extends: sections/site/contact
+      auto-contact:
+        extends: prompts/site/auto-contact
+
+      misc:
+        extends: sections/site/misc
+
+      structuredData:
+        extends: sections/site/structured-data
+        
+        
+  prompting:
+    icon: wand
+    sections:
+
+      prompts:
+        extends: sections/site/prompts
+      formats:
+        extends: sections/site/formats
+      knowledge:
+        extends: sections/site/examples
+
+  seo: seo/site
+  
+
+  menus:
+    label: Menus
+    icon: menu
+    sections:
+
+      menus:
+        extends: sections/site/menubuilder
+      footer:
+        extends: sections/site/footerbuilder

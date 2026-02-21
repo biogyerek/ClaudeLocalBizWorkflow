@@ -1,0 +1,67 @@
+.prose p {
+	max-width: 100%;
+}
+.service-locations-list {
+}
+.service-locations {
+  margin: var(--spacing-12) auto;
+}
+.sublocation:before {
+  content: "📍";
+  padding-right: var(--spacing-3);
+}
+.service-location h3 {
+  display: inline-block;
+}
+.sublocation a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-link);
+  text-decoration-thickness: 2px;
+}
+.service-locations ul {
+  margin-left: 0;
+}
+.service-locations ul li {
+  list-style-type: none;
+}
+.service-location:before {
+  content: "📍";
+}
+.service-location h3 {
+  display: inline-block;
+  padding-left: var(--spacing-4);
+}
+.service-location h3 a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-link);
+  text-decoration-thickness: 2px;
+}
+.service-location:after {
+  content: "→";
+  color: var(--color-gray);
+  font-weight: var(--font-line);
+}
+.service-location h3 a:hover {
+  margin-right: 2px;
+  transition: 0.05s;
+  text-decoration-color: var(--color-link-hover);
+}
+
+.sublocation:after {
+  content: "→";
+  color: var(--color-gray);
+  font-weight: var(--font-line);
+}
+.sublocation a:hover {
+  margin-right: 2px;
+  transition: 0.05s;
+  text-decoration-color: var(--color-link-hover);
+}
+
+@media all and (max-width: 48em) {
+
+  .service-locations-list {
+/*    display: block;
+    max-width: 100%;*/
+  }
+}

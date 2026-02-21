@@ -1,0 +1,40 @@
+title: FAQ
+
+options:
+  changeTemplate:
+    - article
+    - blog
+    - hub
+    - directory
+    - contact
+    - services
+    - about
+    
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/faq/auto-leader
+          auto-text:
+            extends: prompts/faq/auto-text
+
+      main:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  seo: seo/page

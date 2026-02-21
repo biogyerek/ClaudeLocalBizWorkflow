@@ -1,0 +1,9 @@
+type: fields
+
+fields:
+
+  omega_indexer:
+    type: webhook
+    label: Omega Indexer
+    hook: omega_indexer
+    debug: false

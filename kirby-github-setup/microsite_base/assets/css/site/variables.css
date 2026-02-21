@@ -1,0 +1,69 @@
+:root {
+
+	/* TRANSITION MAP */
+	--color-brand: var(--color-menu-bg);
+	--color-cta: var(--color-cta-bg);
+	--menu-color: var(--color-menu-text);
+
+
+	/* FALLBACK VARIABLES */	
+	--color-menu-bg: var(--color-black);
+  	--color-menu-text: var(--color-white);
+
+	--color-highlight: var(--color-blaze);
+	--color-link: var(--color-yellow);
+
+	--color-cta-bg: var(--color-blaze);
+	--color-cta-hover-bg: var(--color-blaze-600);
+	--color-cta-text: var(--color-white);
+
+	/* CTA Callouts */
+	--color-cta-box-bg: var(--color-blue-300);
+	--color-box-bg: var(--color-blue-700);
+	--color-box-text: var(--color-white);
+	--color-call-box-bg: #d1f2df;
+	--color-call-btn-bg: #1abd5e;
+	--color-call-btn-border: #1abd5e;
+	--color-call-btn-text: var(--color-white);
+
+
+
+  	--logo-width: 280px;
+  	--logo-width-mobile: 280px;
+
+
+	
+	/* HEADER */
+	--menu-dropdown-color: var(--color-white);
+  	--menu-dropdown-border: 1px solid rgba(255,255,255,0.1);
+
+
+	/* HEADER & FOOTER */
+	--menu-dropdown-bg: var(--color-menu-bg);
+	--menu-dropdown-bg-mobile: var(--color-menu-bg);
+	--menu-dropdown-color: var(--color-menu-text);
+	--footer-bg: var(--color-menu-bg);
+	--footer-color: var(--color-menu-text);
+	--footer-columns: var(--columns-4);
+
+
+	/* BUTTONS */
+	--btn-cta-bg: var(--color-cta-bg);
+	--btn-cta-color: var(--color-cta-text);
+
+	--btn-offer-bg: var(--color-cta-bg);
+	--btn-offer-color: var(--color-cta-text);
+
+	--btn-menu-bg: var(--color-cta-bg);
+	--btn-menu-color: var(--color-cta-text);
+
+	--btn-box-bg: var(--color-box-bg);
+	--btn-box-color: var(--color-box-text);
+
+	/* manage hover states with opacity instead of colors? */
+	--btn-cta-bg-hover: var(--color-cta-hover-bg);
+	--btn-offer-bg-hover: var(--color-cta-hover-bg);
+	--btn-menu-bg-hover: var(--color-cta-hover-bg);
+	--btn-box-bg-hover: var(--color-cta-hover-bg);
+
+}

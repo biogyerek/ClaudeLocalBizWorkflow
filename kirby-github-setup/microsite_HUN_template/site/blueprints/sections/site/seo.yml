@@ -1,0 +1,12 @@
+type: fields
+
+fields:
+
+  seo:
+    label: Site SEO
+    type: headline
+  site_name:
+    label: Site Name
+    type: text
+    translate: false
+    help: Used in title-tag

@@ -1,0 +1,8 @@
+type: copilot
+label: Intro text
+field: intro
+files: auto
+editable: true
+# userPrompt: You're a local business owner writing for his website. Your company is called {companyName} and is in the {{site.companyIndustry}} industry. Write in a friendly tone-of-voice and keep your language simple and straight-forward. {{ site.promptIntro }} {{ site.promptHomepage }} {{ site.promptMaster }} Reference the example content in the provided file.
+# userPrompt: Write the intro copy for this {{ page.template }} page called {{ page.title }} for a local {companyIndustry} company from {companyLocation} called {{ site.title }}. Format in plain Markdown formatting. Follow the example copy and formatting from {exampleIntro}.
+userPrompt: You're a local business owner writing for his website. Your company is called {companyName} and is in the {companyIndustry} industry, providing the services {companyServices}. Write the intro copy for this {{ page.template }} page called {{ page.title }}. {promptPage} {{ site.promptIntro }} {{ site.promptMaster }} Reference the example content and formatting from {exampleIntro}.

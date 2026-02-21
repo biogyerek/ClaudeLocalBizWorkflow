@@ -1,0 +1,179 @@
+Title: Sublocation
+num: '{{ page.date.toDate("Ymd") }}'
+icon: 📖
+options:
+  changeTemplate:
+    - default
+    - article
+    - article_infinite
+    - blog
+    - hub
+    - reader
+
+tabs:
+
+  location:
+    icon: location
+    sections:
+
+      main:
+        type: fields
+        fields:
+
+          coverimage:
+            label: Cover Image
+            type: files
+            layout: cards
+            size: large
+            width: 1/4
+            max: 1
+            image:
+              ratio: 3/2
+              cover: true
+
+          provincie: 
+            type: tags
+            width: 3/4
+            options:
+              type: query
+              query: site.index.pluck("provincie", ",", true)
+
+
+  article:
+    icon: draft
+    columns:
+
+      main:
+        width: 3/4
+
+
+        fields:
+          intro:
+            label: Intro paragraph
+            type: textarea
+            counter: true
+            placeholder: Identify with the reader. First paragraph of the post (and also the meta description that will be used by Google).
+
+          answer:
+            label: Answer paragraph
+            type: textarea
+            counter: true
+            placeholder: Answer paragraph (max 50 words/320 characters) + enticement to read on (1 sentence).
+
+          summary:
+            label: Summary
+            type: textarea
+            placeholder: 
+
+          text:
+            type: textarea
+            size: large
+            placeholder: Start with writing the best possible 400-word answer paragraph on the internet. Answer the question directly. Then move on to your subheadings.
+
+      sidebar:
+        width: 1/4
+        sections:
+          contentTranslator:
+            type: content-translator
+            # Define field names which should be synced from the default language to other languages
+            syncableFields:
+              - intro
+              - answer
+              - summary
+              - text
+            # Define field names that should be translated
+            translatableFields:
+              - intro
+              - answer
+              - summary
+              - text
+
+          serp-preview:
+            type: serp-preview
+            siteTitle: "{{ site.title.value }}"
+            siteUrl: "{{ site.url }}"
+            titleContentKey: metaTitle
+            descriptionContentKey: metaDescription
+
+          meta:
+            type: fields
+            fields:
+                  
+              related:
+                label: Related articles
+                type: pages
+                layout: list
+                size: tiny
+                query: site.grandchildren(false)
+                image:
+                  ratio: 3/1
+                  cover: true
+
+              author:
+                type: users
+                query: kirby.users
+                required: false
+
+              date:
+                type: date
+                time: true
+                default: now
+              updated:
+                type: date
+                time: true
+
+              toc:
+                label: Table of Contents
+                type: toggle
+                width: 2/4
+                default: Show
+                width: 1/2
+                text:
+                  - Don't show
+                  - Show
+
+              toc_alt:
+                label: Alternative TOC Heading
+                type: toggle
+                width: 1/4
+                when:
+                  toc: true
+                default: Don't show
+                text:
+                  - Don't show
+                  - Show
+
+              toc_title:
+                label: TOC alternative text
+                type: text      
+                width: 3/4
+                when:
+                  toc_alt: true 
+
+              categories:
+                type: tags
+                options: query
+                query: site.children.template("hub")
+
+              tags:
+                type: tags
+
+              # breadcrumb_title:
+              #   label: Breadcrumb title
+              #   type: text
+              #   description: the title used in breadcrumb navigation
+
+              related:
+                label: Related articles
+                type: pages
+                layout: list
+                size: tiny
+                query: site.grandchildren(false)
+                image:
+                  ratio: 3/1
+                  cover: true
+
+          files:
+            type: files
+
+  seo: seo/page

@@ -1,0 +1,53 @@
+type: fields
+fields:
+  exampleHeadline:
+    label: Tartalom példák
+    type: headline
+  exampleLeader:
+    extends: fields/prompt
+  exampleMission:
+    extends: fields/prompt
+  exampleTagline:
+    extends: fields/prompt
+  exampleContact:
+    extends: fields/prompt
+
+  exampleContactpage:
+    extends: fields/prompt  
+  exampleEstimatepage:
+    extends: fields/prompt
+  exampleCareerpage:
+    extends: fields/prompt
+  exampleFaqpage:
+    extends: fields/prompt
+  exampleTeampage:
+    extends: fields/prompt
+
+  exampleServicesIntro:
+    extends: fields/prompt
+  exampleServiceLeader:
+    extends: fields/prompt
+  exampleServiceIntro:
+    extends: fields/prompt
+  exampleServiceDescription:
+    extends: fields/prompt
+
+  exampleServiceAreasIntro:
+    extends: fields/prompt
+  exampleServiceAreaspage:
+    extends: fields/prompt
+
+  exampleLocationIntro:
+    extends: fields/prompt
+  exampleLocationpage:
+    extends: fields/prompt
+
+  exampleAboutIntro:
+    extends: fields/prompt
+  exampleAboutpage:
+    extends: fields/prompt
+
+  exampleServicepage:
+    extends: fields/prompt
+  exampleHomepage:
+    extends: fields/prompt

@@ -1,0 +1,62 @@
+/* KIRBYTAG-ELEMENTS */
+
+aside.element .services, aside.element .service-locations {
+  background: var(--color-yellow-200);
+  padding: var(--spacing-10) var(--spacing-5);
+  margin: var(--spacing-12) auto;
+}
+aside.element h2 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-4);
+}
+aside.element .services, aside.element .service-locations-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--spacing-6);
+  margin-top: var(--spacing-8);
+}
+aside.element .services a.btn {
+  margin-top: var(--spacing-8);
+}
+aside.element .services-list {
+  display: grid;
+  grid-gap: var(--spacing-2);
+}
+aside.element .service:before {
+  content: "🏠";
+}
+aside.element .service-location:before {
+  content: "📍";
+}
+aside.element .service h4, aside.element .service-location h4 {
+  margin-top: 0;
+  display: inline-block;
+  padding-left: var(--spacing-2);
+  font-size: var(--text-xl);
+  font-weight: var(--font-normal);
+}
+aside.element .service h4 a, aside.element .service-location h4 a {
+  text-decoration: none;
+  text-decoration-color: var(--color-link);
+  text-decoration-thickness: 2px;
+}
+aside.element .service:after, aside.element .service-location:after{
+  content: "→";
+  color: var(--color-gray);
+  font-weight: var(--font-line);
+}
+aside.element .service h4 a:hover, aside.element .service-location h4 a:hover {
+  margin-right: 2px;
+  transition: 0.05s;
+}
+
+@media screen and (min-width: 72rem) {
+  aside.element .services, aside.element .service-locations {
+    padding: var(--spacing-10);
+  }
+  aside.element .services, aside.element .service-locations-list {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: var(--spacing-4);
+  }
+}

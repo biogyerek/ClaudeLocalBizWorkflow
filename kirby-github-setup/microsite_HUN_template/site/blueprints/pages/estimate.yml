@@ -1,0 +1,37 @@
+title: Estimate
+
+options:
+  changeTemplate:
+    - article
+    - blog
+    - hub
+    - directory
+    - contact
+    
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/estimate/auto-leader
+          auto-text:
+            extends: prompts/estimate/auto-text
+
+      main:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  seo: seo/page

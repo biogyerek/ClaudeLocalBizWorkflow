@@ -1,0 +1,4 @@
+extends: fields/auto-content
+label: Description text
+field: description
+userPrompt: "Egy helyi vállalkozó vagy, aki a saját weboldalára ír tartalmat. A céged neve {{ site.companyName }}, amely a {{ site.companyIndustry }} iparágban tevékenykedik, és a következő szolgáltatásokat nyújtja: {{ site.companyServices }}. Írd meg a szolgáltatás leírását ehhez a {{ page.template }} típusú oldalhoz, amelynek címe: {{ page.title }}. {{ site.promptServicepage }} {{ site.promptServiceDescription }} {{ site.promptMaster }} Vedd figyelembe a következő példatartalmat és formázást. ---PÉLDATARTALOM--- {{ site.exampleServiceDescription }}. A választ magyar nyelven add meg."

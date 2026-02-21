@@ -1,0 +1,32 @@
+:root {
+	--leader-height: 200px;
+	--color-highlight: var(--color-yellow);
+}
+
+.contact-form {
+    font-size: var(--text-2xl);
+    line-height: var(--leading-normal);
+    color: var(--prose-color-text);
+    align-items: start;
+}
+.cb-box__type-embed {
+	margin: 0;
+}
+.cb-box__inner-col {
+	padding: var(--spacing-4);
+}
+
+@media screen and (min-width: 40rem) {
+	:root {
+		--leader-height: 300px;
+	}
+}
+
+@media screen and (min-width: 72rem) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.contact-form {
+	    margin: var(--spacing-10) 0;
+	}
+}

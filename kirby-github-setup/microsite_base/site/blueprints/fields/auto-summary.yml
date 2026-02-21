@@ -1,0 +1,6 @@
+type: copilot
+files: false
+editable: true
+label: Summary
+field: summary
+userPrompt: "{{ site.promptSummary }} {intro} {text} {{ site.promptMaster }}"

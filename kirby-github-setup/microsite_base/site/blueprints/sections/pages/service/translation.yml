@@ -1,0 +1,13 @@
+type: content-translator
+# Define field names which should be synced from the default language to other languages
+syncableFields:
+  - intro
+  - answer
+  - summary
+  - text
+# Define field names that should be translated
+translatableFields:
+  - intro
+  - answer
+  - summary
+  - text

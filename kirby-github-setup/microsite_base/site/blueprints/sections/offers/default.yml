@@ -1,0 +1,41 @@
+type: fields
+
+fields:
+
+  headlineDefault:
+    label: Default offer endpoints
+    type: headline
+  phone:
+    type: tel
+    width: 1/6
+    translate: false
+    help: WhatConverts phone number
+  email:
+    type: email
+    width: 1/6
+    translate: false
+    help: Will receive all form submissions
+  emailFrom:
+    label: From Email
+    type: email
+    width: 1/6
+    translate: false
+    help: Email address to send email from to customers
+  emailPrivacy:
+    label: Privacy Email
+    type: email
+    width: 1/6
+    translate: false
+    help: Email address to insert into Privacy Policy
+  contact:
+    type: pages
+    max: 1
+    width: 1/6
+    translate: false
+    help: Set the default contact page for CTAs
+  estimate:
+    type: pages
+    max: 1
+    width: 1/6
+    translate: false
+    help: Set the default estimate page for CTAs

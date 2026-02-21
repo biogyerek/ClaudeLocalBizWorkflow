@@ -1,0 +1,27 @@
+type: fields
+fields:
+
+  headlineText:
+    label: Page text
+    type: headline
+  leader:
+    label: Leader
+    type: textarea
+    when:
+      showLeader: true
+  intro:
+    type: textarea
+    help: Text will be used as homepage service description - 20 words
+  description:
+    label: Description
+    type: textarea
+    help: Text will be used as services page description - 2 paragraphs - 120 words
+  text:
+    label: Text
+    type: textarea
+    size: huge
+    help: Text will be used on top-level service page - 600 words
+  # directoryText:
+  #   label: Text
+  #   type: textarea
+  #   size: huge

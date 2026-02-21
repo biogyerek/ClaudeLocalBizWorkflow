@@ -1,0 +1,17 @@
+.contact-form form {
+	background: var(--color-blue-900);
+	padding: var(--spacing-8) var(--spacing-10);
+	border-radius: var(--rounded);
+}
+.contact-form form label {
+	color: white;
+}
+
+@media screen and (min-width: 72rem) {
+	.container .contact-form {
+		margin-top: -10rem !important;
+	}
+	.contact-grid .contact-form {
+		margin-top: 0 !important;
+	}
+}

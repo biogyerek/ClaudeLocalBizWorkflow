@@ -1,0 +1,25 @@
+type: fields
+fields:
+
+  exampleText:
+    extends: fields/prompt
+    help: Input any example text you want to reference for auto-text generation. Page specific - only used for this page.
+
+  # promptPage:
+  #   extends: fields/prompt
+
+  # formatLeader:
+  #   extends: fields/prompt
+  #   default: "{{ site.formatLeader }}"
+
+  # exampleLeader:
+  #   extends: fields/prompt
+  #   default: "{{ site.exampleLeader }}"
+
+  # exampleIntro:
+  #   extends: fields/prompt
+  #   default: "{{ site.exampleIntro }}"
+
+  # exampleDescription:
+  #   extends: fields/prompt
+  #   default: "{{ site.exampleServiceDescription }}"

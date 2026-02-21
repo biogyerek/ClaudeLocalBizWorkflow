@@ -1,0 +1,40 @@
+title: Blog
+
+options:
+  changeTemplate:
+    - article
+    - hub
+    - directory
+    - contact
+    - services
+    - about
+
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/blog/auto-leader
+          auto-intro:
+            extends: prompts/blog/auto-intro
+          auto-text:
+            extends: prompts/blog/auto-text
+
+      main:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  seo: seo/page

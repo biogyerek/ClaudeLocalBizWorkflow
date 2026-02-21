@@ -1,0 +1,42 @@
+:root {
+	--container: 82rem;
+	--container-padding: var(--spacing-4);
+	--container-prose: 100%;
+	--columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (min-width: 72rem) {
+	:root {
+	--container-prose: 768px;
+	}
+}
+
+.sidebar {
+	width: 100%;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.columns {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: var(--spacing-8);
+}
+
+@media screen and (min-width: 40rem) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.columns {
+		grid-template-columns: var(--columns);
+	}
+}
+
+@media screen and (min-width: 72rem) {
+	.grid {
+		display: grid;
+		grid-template-columns: var(--container-prose) 1fr;
+		grid-gap: var(--spacing-16);
+	}
+}

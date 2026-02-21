@@ -1,0 +1,18 @@
+type: fields
+fields:
+
+  leaderTitle:
+    label: Leader
+    type: headline
+  showLeader:
+    label: Show Leader
+    type: toggle
+    default: true
+    translate: false
+    text:
+        - Don't show
+        - Show
+  coverimage: 
+    extends: fields/coverimage
+    when:
+      showLeader: true

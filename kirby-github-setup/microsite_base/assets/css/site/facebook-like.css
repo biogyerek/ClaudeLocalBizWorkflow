@@ -1,0 +1,17 @@
+.facebook-share-container, .facebook-like-container {
+	background: var(--color-yellow);
+	border: 5px dashed var(--color-yellow-800);
+	margin: 0;
+	padding: var(--spacing-8);
+	text-align: left;
+	font-family: var(--font-sans);
+}
+.facebook-share-cta {
+	margin-bottom: var(--spacing-4);
+	font-size: var(--text-xl);
+}
+
+.facebook-like-cta {
+	margin-right: var(--spacing-4);
+	font-size: var(--text-l);
+}

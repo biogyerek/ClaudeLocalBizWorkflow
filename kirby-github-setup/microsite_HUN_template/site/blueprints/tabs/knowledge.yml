@@ -1,0 +1,5 @@
+icon: book
+sections:
+
+  input:
+    extends: /sections/pages/knowledge

@@ -1,0 +1,15 @@
+title: Favicon
+
+accept:
+  mime: image/png
+  orientation: square
+
+create:
+  width: 1024
+  height: 1024
+  crop: true
+  format: png
+
+image:
+  ratio: 1:1
+  cover: true

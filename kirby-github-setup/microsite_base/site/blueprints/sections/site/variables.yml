@@ -1,0 +1,43 @@
+type: fields
+
+fields:
+
+  variablesHeadline:
+    label: Variables
+    type: headline
+  companyName:
+    label: Company name
+    type: text
+    width: 1/6
+    required: true
+  companyIndustry:
+    label: Company industry
+    type: text
+    width: 1/6
+    required: true
+  companyArea:
+    type: text
+    width: 1/6
+    required: true
+  companyLocation:
+    type: text
+    width: 1/6
+    required: true
+  companyServices:
+    type: text
+    width: 2/6
+    required: true
+  placeholders:
+    label: Text replacements
+    type: structure
+    fields:
+      key:
+        label: Placeholder key
+        type: text
+        help: >
+          The key is what you use in your textfields, e.g. {{ company }}
+      value:
+        label: Replacement text
+        type: textarea
+        help: >
+          The replacement text is the text that will replace your keyholders.

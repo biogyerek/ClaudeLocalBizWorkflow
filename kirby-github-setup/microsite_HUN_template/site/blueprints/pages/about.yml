@@ -1,0 +1,41 @@
+title: About Us
+
+options:
+  changeTemplate:
+    - article
+    - blog
+    - hub
+    - directory
+    - contact
+    - services
+    
+tabs:
+
+  page:
+    icon: page
+    columns:
+
+      sidebar:
+        width: 1/4
+        sections:
+
+          leader:
+            extends: sections/pages/leader
+          auto-leader:
+            extends: prompts/about/auto-leader
+          auto-intro:
+            extends: prompts/about/auto-intro
+          auto-text:
+            extends: prompts/about/auto-text
+
+      main:
+        width: 3/4
+        sections:
+
+          text:
+            extends: sections/pages/text
+
+
+  knowledge: tabs/knowledge
+  files: tabs/files
+  seo: seo/page
